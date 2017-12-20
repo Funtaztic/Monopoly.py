@@ -76,3 +76,17 @@ for key in battleship.keys():
     val = battleship[key]
     print(key,':',val)
     # But this is not sorted. It prints the values at random order every time.
+##############################################################################
+#This is a dice throw, it gives us a random number from a normal, 6-sided dice.
+#Source: http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
+def dice_throw():
+    from random import randint
+    result = (randint(1,6))
+    return(result)
+
+dice_throw()
+
+#It can be used like this, thanks to the return() at the end.
+print('I will go forward', dice_throw(), 'steps.')
+# This will actually change the position of the player: position = position + dice_throw()
+##############################################################################
