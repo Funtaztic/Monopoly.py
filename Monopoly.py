@@ -4,6 +4,8 @@
 #Make it for 1 player first, or start development with multiple players?
 
 ##############################################################################
+import math
+##############################################################################
 #Make a wait() function with a configurable parameter, like: wait(1) or wait(2).
 #Source: https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/
 def wait(sec):
@@ -58,9 +60,19 @@ basic_money_function()
 #Money can be modified as seen below.
 #-> basic_money_function is not needed anymore?/needs to be modified?
 
-battleship = {'money': 150,'position': 2,'in_jail': False,}
+battleship = {
+    'money':    150,
+    'position': 2,
+    'in_jail':  False,}
 print('Battleship money:', battleship['money'])
 battleship['money'] = battleship['money'] + 10
 print('Battleship money + 10')
 print('Battleship money:', battleship['money'])
 print(battleship)
+
+#Source: http://www.compciv.org/guides/python/fundamentals/dictionaries-overview/
+# Iterating through key-value pairs with items()
+for key in battleship.keys():
+    val = battleship[key]
+    print(key,':',val)
+    # But this is not sorted. It prints the values at random order every time.
