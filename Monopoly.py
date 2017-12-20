@@ -72,7 +72,7 @@ def player_registration_v1():
 
 #Example of a class:
 def classificator():
-    class calculator:
+    class Calculator():
         def addition(x,y):
             added = x + y
             print(added)
