@@ -46,3 +46,21 @@ def basic_money_function():
 basic_money_function()
 
 ##############################################################################
+# Player(s): what should they be? Functions? Lists?
+#Dictionaries? https://docs.python.org/3/tutorial/datastructures.html
+# source: https://en.wikipedia.org/wiki/Monopoly_(game)
+
+#racecar
+#iron
+#top_hat
+
+#Hard-coded version of player as dictionary, money as key, (money)amount as value.
+#Money can be modified as seen below.
+#-> basic_money_function is not needed anymore?/needs to be modified?
+
+battleship = {'money': 150,'position': 2,'in_jail': False,}
+print('Battleship money:', battleship['money'])
+battleship['money'] = battleship['money'] + 10
+print('Battleship money + 10')
+print('Battleship money:', battleship['money'])
+print(battleship)
