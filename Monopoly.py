@@ -52,8 +52,8 @@ def basic_money_function():
 # Player(s): what should they be? Functions? Lists?
 #Dictionaries? https://docs.python.org/3/tutorial/datastructures.html
 # source: https://en.wikipedia.org/wiki/Monopoly_(game)
-
-def player_registration():
+#The player_registration_v1 does the job, but I can not (yet) reference the players from the list.
+def player_registration_v1():
     number_of_players = input('How many players would like to play?')
 
     players = []
@@ -62,6 +62,14 @@ def player_registration():
         players.append(player)
         print(player)
         print(players)
+
+def player_registration_v2():
+    number_of_players = input('How many players would like to play?')
+
+        players = [player1: 'none', player2:, player3, player4, player5, player6, player7, player8]
+
+#remove last item from the dict, until number_of_players number of players remain.
+#Source: https://www.tutorialspoint.com/python3/python_lists.htm
 
 #racecar
 #iron
@@ -131,7 +139,7 @@ def dice_throw():
 
 ##############################################################################
 #THE GAME STARTS:
-player_registration()
+player_registration_v1()
 dice_throw()
 print('The first roll of dice is:',dice_throw())
 ##############################################################################
