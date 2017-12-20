@@ -5,6 +5,7 @@
 
 ##############################################################################
 import math
+
 ##############################################################################
 #Make a wait() function with a configurable parameter, like: wait(1) or wait(2).
 #Source: https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/
@@ -45,12 +46,22 @@ def basic_money_function():
         #it may be replaced with a return?
         basic_money_function()
 
-basic_money_function()
+#basic_money_function()
 
 ##############################################################################
 # Player(s): what should they be? Functions? Lists?
 #Dictionaries? https://docs.python.org/3/tutorial/datastructures.html
 # source: https://en.wikipedia.org/wiki/Monopoly_(game)
+
+def player_registration():
+    number_of_players = input('How many players would like to play?')
+
+    players = []
+    for i in range(int(number_of_players)):
+        player = input("Please enter your name: ").title()
+        players.append(player)
+        print(player)
+        print(players)
 
 #racecar
 #iron
@@ -59,23 +70,24 @@ basic_money_function()
 #Hard-coded version of player as dictionary, money as key, (money)amount as value.
 #Money can be modified as seen below.
 #-> basic_money_function is not needed anymore?/needs to be modified?
-
-battleship = {
-    'money':    150,
-    'position': 2,
-    'in_jail':  False,}
-print('Battleship money:', battleship['money'])
-battleship['money'] = battleship['money'] + 10
-print('Battleship money + 10')
-print('Battleship money:', battleship['money'])
-print(battleship)
+def player_data_init():
+    battleship = {
+        'money':    150,
+        'position': 2,
+        'in_jail':  False,}
+    print('Battleship money:', battleship['money'])
+    battleship['money'] = battleship['money'] + 10
+    print('Battleship money + 10')
+    print('Battleship money:', battleship['money'])
+    print(battleship)
 
 #Source: http://www.compciv.org/guides/python/fundamentals/dictionaries-overview/
 # Iterating through key-value pairs with items()
-for key in battleship.keys():
-    val = battleship[key]
-    print(key,':',val)
-    # But this is not sorted. It prints the values at random order every time.
+def player_data_print():
+    for key in battleship.keys():
+        val = battleship[key]
+        print(key,':',val)
+        # But this is not sorted. It prints the values at random order every time.
 ##############################################################################
 #This is a dice throw, it gives us a random number from a normal, 6-sided dice.
 #Source: http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
@@ -84,9 +96,42 @@ def dice_throw():
     result = (randint(1,6))
     return(result)
 
-dice_throw()
-
 #It can be used like this, thanks to the return() at the end.
-print('I will go forward', dice_throw(), 'steps.')
+#print('I will go forward', dice_throw(), 'steps.')
 # This will actually change the position of the player: position = position + dice_throw()
+##############################################################################
+##############################################################################
+##############################################################################
+#Position loop:
+#it should tell the player that 'you are on square (position).' before and after a roll.
+#Winner: make a list out of players in the game, if only one remains, wins.
+
+
+
+
+#Table squares (where the players can go by rolling the dice)
+#def square_1():
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+##############################################################################
+
+##############################################################################
+
+##############################################################################
+
+##############################################################################
+
+##############################################################################
+
+##############################################################################
+
+##############################################################################
+#THE GAME STARTS:
+player_registration()
+dice_throw()
+print('The first roll of dice is:',dice_throw())
 ##############################################################################
