@@ -63,10 +63,36 @@ def player_registration_v1():
         print(player)
         print(players)
 
-def player_registration_v2():
-    number_of_players = input('How many players would like to play?')
+#Player should be a Class. I don't yet get it, but I think it should be that.
 
-        players = [player1: 'none', player2:, player3, player4, player5, player6, player7, player8]
+#def player_registration_v2():
+#    class player:
+#        def token(self):
+
+
+#Example of a class:
+def classificator():
+    class calculator:
+        def addition(x,y):
+            added = x + y
+            print(added)
+
+        def subtraction(x,y):
+            sub = x - y
+            print(sub)
+
+        def multiplication(x,y):
+            mult = x * y
+            print(mult)
+
+        def division(x,y):
+            div = x / y
+            print(div)
+
+    calculator.addition(3,6)
+    calculator.subtraction(3,6)
+    calculator.multiplication(3,6)
+    calculator.division(3,6)
 
 #remove last item from the dict, until number_of_players number of players remain.
 #Source: https://www.tutorialspoint.com/python3/python_lists.htm
