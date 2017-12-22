@@ -71,28 +71,20 @@ def player_registration_v1():
 
 
 #Example of a class:
-def classificator():
-    class Calculator():
-        def addition(x,y):
-            added = x + y
-            print(added)
+class Player(object):
+  money = 100
 
-        def subtraction(x,y):
-            sub = x - y
-            print(sub)
+  def __init__(self, name, token):
+    self.name = name
+    self.token = token
 
-        def multiplication(x,y):
-            mult = x * y
-            print(mult)
+abel = Player('Abel','Battleship')
 
-        def division(x,y):
-            div = x / y
-            print(div)
+print(abel.money)
 
-    calculator.addition(3,6)
-    calculator.subtraction(3,6)
-    calculator.multiplication(3,6)
-    calculator.division(3,6)
+print(Player.money)
+
+
 
 #remove last item from the dict, until number_of_players number of players remain.
 #Source: https://www.tutorialspoint.com/python3/python_lists.htm
