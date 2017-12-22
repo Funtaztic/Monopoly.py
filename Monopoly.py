@@ -52,16 +52,6 @@ def basic_money_function():
 # Player(s): what should they be? Functions? Lists?
 #Dictionaries? https://docs.python.org/3/tutorial/datastructures.html
 # source: https://en.wikipedia.org/wiki/Monopoly_(game)
-#The player_registration_v1 does the job, but I can not (yet) reference the players from the list.
-def player_registration_v1():
-    number_of_players = input('How many players would like to play?')
-
-    players = []
-    for i in range(int(number_of_players)):
-        player = input("Please enter your name: ").title()
-        players.append(player)
-        print(player)
-        print(players)
 
 #Player should be a Class. I don't yet get it, but I think it should be that.
 
