@@ -70,19 +70,19 @@ def player_registration_v1():
 #        def token(self):
 
 
-#Example of a class:
+#This class will create the players, instead of player_registration_v1:
+#source: https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
 class Player(object):
   money = 100
+  position = 0
+  in_jail = False
 
   def __init__(self, name, token):
     self.name = name
     self.token = token
 
-abel = Player('Abel','Battleship')
+Player1 = Player('Abel','Battleship')
 
-print(abel.money)
-
-print(Player.money)
 
 
 
