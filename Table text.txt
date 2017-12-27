@@ -1,306 +1,306 @@
 This file will contain the text of the table.
 
 ---------------------------------------------
-Number:
-Name:
-Color:
-Price:
-Owner:
+"Number":
+"Name":
+"Color":
+"Price":
+"Owner":
 ---------------------------------------------
 ---------------------------------------------
-Number:
-Name:      Community Chest
-Color:     Blue Chest
-Price:     N/A
-Owner:     N/A
+"Number":
+"Name":      "Community Chest"
+"Color":     "Blue" Chest"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:
-Name:      Chance
-Color:     N/A
-Price:     N/A
-Owner:     N/A
+"Number":
+"Name":      "Chance"
+"Color":     "N/A"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 
 
 
 ---------------------------------------------
-Number:    0
-Name:      START
-Color:     N/A
-Price:     -200
-Owner:     N/A
+"Number":    0
+"Name":      "START"
+"Color":     "N/A"
+"Price":     -200
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    1
-Name:      Mediterranean Avenue
-Color:     Brown
-Price:     60
-Owner:     None
+"Number":    1
+"Name":      "Mediterranean Avenue"
+"Color":     "Brown"
+"Price":     60
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    2
-Name:      Community Chest
-Color:     Blue Chest
-Price:     N/A
-Owner:     N/A
+"Number":    2
+"Name":      "Community Chest"
+"Color":     "Blue" Chest"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    3
-Name:      Baltic Avenue
-Color:     Brown
-Price:     60
-Owner:     None
+"Number":    3
+"Name":      "Baltic Avenue"
+"Color":     "Brown"
+"Price":     60
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    4
-Name:      Income Tax
-Color:     N/A
-Price:     200
-Owner:     N/A
+"Number":    4
+"Name":      "Income Tax"
+"Color":     "N/A"
+"Price":     200
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    5
-Name:      Reading Railroad
-Color:     N/A
-Price:     200
-Owner:     None
+"Number":    5
+"Name":      "Reading Railroad"
+"Color":     "N/A"
+"Price":     200
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    6
-Name:      Oriental Avenue
-Color:     Teal
-Price:     100
-Owner:     None
+"Number":    6
+"Name":      "Oriental Avenue"
+"Color":     "Teal"
+"Price":     100
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    7
-Name:      Chance
-Color:     N/A
-Price:     N/A
-Owner:     N/A
+"Number":    7
+"Name":      "Chance"
+"Color":     "N/A"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    8
-Name:      Vermont Avenue
-Color:     Teal
-Price:     100
-Owner:     None
+"Number":    8
+"Name":      "Vermont Avenue"
+"Color":     "Teal"
+"Price":     100
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    9
-Name:      Connecticut Avenue
-Color:     Teal
-Price:     120
-Owner:     None
+"Number":    9
+"Name":      "Connecticut Avenue"
+"Color":     "Teal"
+"Price":     120
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    10
-Name:      Just Visiting (Jail)
-Color:     N/A
-Price:     N/A
-Owner:     N/A
+"Number":    10
+"Name":      "Just Visiting (Jail)"
+"Color":     "N/A"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    11
-Name:      St. Charles Place
-Color:     Pink
-Price:     140
-Owner:     None
+"Number":    11
+"Name":      "St. Charles Place"
+"Color":     "Pink"
+"Price":     140
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    12
-Name:      Electric Company
-Color:     N/A
-Price:     150
-Owner:     None
+"Number":    12
+"Name":      "Electric Company"
+"Color":     "N/A"
+"Price":     150
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    13
-Name:      States Avenue
-Color:     Pink
-Price:     140
-Owner:     None
+"Number":    13
+"Name":      "States Avenue"
+"Color":     "Pink"
+"Price":     140
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    14
-Name:      Virginia Avenue
-Color:     Pink
-Price:     160
-Owner:     None
+"Number":    14
+"Name":      "Virginia Avenue"
+"Color":     "Pink"
+"Price":     160
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    15
-Name:      Pennsylvania Railroad
-Color:     N/A
-Price:     200
-Owner:     None
+"Number":    15
+"Name":      "Pennsylvania Railroad"
+"Color":     "N/A"
+"Price":     200
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    16
-Name:      St. James Place
-Color:     Orange
-Price:     180
-Owner:     None
+"Number":    16
+"Name":      "St. James Place"
+"Color":     "Orange"
+"Price":     180
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    17
-Name:      Community Chest
-Color:     Blue Chest
-Price:     N/A
-Owner:     N/A
+"Number":    17
+"Name":      "Community Chest"
+"Color":     "Blue Chest"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    18
-Name:      Tennessee Avenue
-Color:     Orange
-Price:     180
-Owner:     None
+"Number":    18
+"Name":      "Tennessee Avenue"
+"Color":     "Orange"
+"Price":     180
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    19
-Name:      New York Avenue
-Color:     Orange
-Price:     200
-Owner:     None
+"Number":    19
+"Name":      "New York Avenue"
+"Color":     "Orange"
+"Price":     200
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    20
-Name:      Free Parking
-Color:     N/A
-Price:     N/A
-Owner:     N/A
+"Number":    20
+"Name":      "Free Parking"
+"Color":     "N/A"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    21
-Name:      Kentucky Avenue
-Color:     Red
-Price:     220
-Owner:     None
+"Number":    21
+"Name":      "Kentucky Avenue"
+"Color":     "Red"
+"Price":     220
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    22
-Name:      Chance
-Color:     N/A
-Price:     N/A
-Owner:     N/A
+"Number":    22
+"Name":      "Chance"
+"Color":     "N/A"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    23
-Name:      Indiana Avenue
-Color:     Red
-Price:     220
-Owner:     None
+"Number":    23
+"Name":      "Indiana Avenue"
+"Color":     "Red"
+"Price":     220
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    24
-Name:      Illinois Avenue
-Color:     Red
-Price:     240
-Owner:     None
+"Number":    24
+"Name":      "Illinois Avenue"
+"Color":     "Red"
+"Price":     240
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    25
-Name:      B. & O. Railroad
-Color:     N/A
-Price:     200
-Owner:     None
+"Number":    25
+"Name":      "B. & O. Railroad"
+"Color":     "N/A"
+"Price":     200
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    26
-Name:      Atlantic Avenue
-Color:     Yellow
-Price:     260
-Owner:     None
+"Number":    26
+"Name":      "Atlantic Avenue"
+"Color":     "Yellow"
+"Price":     260
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    27
-Name:      Ventnor Avenue
-Color:     Yellow
-Price:     260
-Owner:     None
+"Number":    27
+"Name":      "Ventnor Avenue"
+"Color":     "Yellow"
+"Price":     260
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    28
-Name:      Water Works
-Color:     N/A
-Price:     150
-Owner:     None
+"Number":    28
+"Name":      "Water Works"
+"Color":     "N/A"
+"Price":     150
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    29
-Name:      Marvin Gardens
-Color:     Yellow
-Price:     280
-Owner:     None
+"Number":    29
+"Name":      "Marvin Gardens"
+"Color":     "Yellow"
+"Price":     280
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    30
-Name:      Go To Jail
-Color:     N/A
-Price:     N/A
-Owner:     N/A
+"Number":    30
+"Name":      "Go To Jail"
+"Color":     "N/A"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    31
-Name:      Pacific Avenue
-Color:     Green
-Price:     300
-Owner:     None
+"Number":    31
+"Name":      "Pacific Avenue"
+"Color":     "Green"
+"Price":     300
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    32
-Name:      North Carolina Avenue
-Color:     Green
-Price:     300
-Owner:     None
+"Number":    32
+"Name":      "North Carolina Avenue"
+"Color":     "Green"
+"Price":     300
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    33
-Name:      Community Chest
-Color:     Blue Chest
-Price:     N/A
-Owner:     N/A
+"Number":    33
+"Name":      "Community Chest"
+"Color":     "Blue" Chest
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    34
-Name:      Pennsylvania Avenue
-Color:     Green
-Price:     320
-Owner:     None
+"Number":    34
+"Name":      "Pennsylvania Avenue"
+"Color":     "Green"
+"Price":     320
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    35
-Name:      Short Line
-Color:     N/A
-Price:     200
-Owner:     None
+"Number":    35
+"Name":      "Short Line"
+"Color":     "N/A"
+"Price":     200
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    36
-Name:      Chance
-Color:     N/A
-Price:     N/A
-Owner:     N/A
+"Number":    36
+"Name":      "Chance"
+"Color":     "N/A"
+"Price":     "N/A"
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    37
-Name:      Park Place
-Color:     Blue
-Price:     350
-Owner:     None
+"Number":    37
+"Name":      "Park Place"
+"Color":     "Blue"
+"Price":     350
+"Owner":     "None"
 ---------------------------------------------
 ---------------------------------------------
-Number:    38
-Name:      Luxury Tax
-Color:     N/A
-Price:     100
-Owner:     N/A
+"Number":    38
+"Name":      "Luxury Tax"
+"Color":     "N/A"
+"Price":     100
+"Owner":     "N/A"
 ---------------------------------------------
 ---------------------------------------------
-Number:    39
-Name:      Broadwalk
-Color:     Blue
-Price:     400
-Owner:     None
+"Number":    39
+"Name":      "Broadwalk"
+"Color":     "Blue"
+"Price":     400
+"Owner":     "None"
 ---------------------------------------------
