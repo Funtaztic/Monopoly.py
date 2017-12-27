@@ -17,7 +17,7 @@
 #---------------------------------------------#
 "Number":    2
 "Name":      "Community Chest"
-"Color":     "Blue" Chest"
+"Color":     "Blue Chest"
 "Price":     "N/A"
 "Owner":     "N/A"
 #---------------------------------------------#
