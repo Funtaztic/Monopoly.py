@@ -1,5 +1,17 @@
 #This file will contain the text of the table.
 
+class Field(object):
+
+    def __init__(self, number, name, color, owner, price):
+      self.number = number
+      self.name = name
+      self.color = color
+      self.owner = owner
+      self.price = price
+
+Field1 = Field('1','"Mediterranean Avenue"',"Brown","None",60)
+
+
 #---------------------------------------------#
 "Number":    0
 "Name":      "START"
