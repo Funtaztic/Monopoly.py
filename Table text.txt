@@ -10,7 +10,7 @@ This file will contain the text of the table.
 ---------------------------------------------
 "Number":
 "Name":      "Community Chest"
-"Color":     "Blue" Chest"
+"Color":     "Blue Chest"
 "Price":     "N/A"
 "Owner":     "N/A"
 ---------------------------------------------
