@@ -75,7 +75,6 @@ Player1 = Player('Abel','Battleship')
 
 
 
-
 #remove last item from the dict, until number_of_players number of players remain.
 #Source: https://www.tutorialspoint.com/python3/python_lists.htm
 
@@ -132,6 +131,44 @@ def dice_throw():
 ##############################################################################
 ##############################################################################
 ##############################################################################
+Field_0 = {
+"Name":      "START",
+"Color":     "N/A",
+"Price":     -200,
+"Owner":     "N/A",
+}
+#---------------------------------------------#
+#---------------------------------------------#
+Field_1 = {
+"Name":      "Mediterranean Avenue",
+"Color":     "Brown",
+"Price":     60,
+"Owner":     "None",
+}
+#---------------------------------------------#
+#---------------------------------------------#
+Field_2 = {
+"Name":      "Community Chest",
+"Color":     "Blue Chest",
+"Price":     "N/A",
+"Owner":     "N/A",
+}
+#---------------------------------------------#
+#---------------------------------------------#
+Field_3 = {
+"Name":      "Baltic Avenue",
+"Color":     "Brown",
+"Price":     60,
+"Owner":     "None",
+}
+#---------------------------------------------#
+#---------------------------------------------#
+Field_4 = {
+"Name":      "Income Tax",
+"Color":     "N/A",
+"Price":     200,
+"Owner":     "N/A",
+}
 
 ##############################################################################
 
@@ -147,7 +184,12 @@ def dice_throw():
 
 ##############################################################################
 #THE GAME STARTS:
-player_registration_v1()
 dice_throw()
 print('The first roll of dice is:',dice_throw())
 ##############################################################################
+print('Player1 money:' + str(Player1.money))
+
+Player1.money -= Field_0["Price"]
+print("Now the player has crossed the START field, and receives 200 money")
+
+print('Player1 money:' + str(Player1.money))
