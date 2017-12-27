@@ -49,16 +49,6 @@ def basic_money_function():
 #basic_money_function()
 
 ##############################################################################
-# Player(s): what should they be? Functions? Lists?
-#Dictionaries? https://docs.python.org/3/tutorial/datastructures.html
-# source: https://en.wikipedia.org/wiki/Monopoly_(game)
-
-#Player should be a Class. I don't yet get it, but I think it should be that.
-
-#def player_registration_v2():
-#    class player:
-#        def token(self):
-
 
 #This class will create the players, instead of player_registration_v1:
 #source: https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
@@ -71,7 +61,10 @@ class Player(object):
     self.name = name
     self.token = token
 
-Player1 = Player('Abel','Battleship')
+Player1 = Player('Abel','Ship')
+Player2 = Player('Dora','Dog')
+Player3 = Player('John','Iron')
+Player4 = Player('Chris','Car')
 
 
 
@@ -82,27 +75,8 @@ Player1 = Player('Abel','Battleship')
 #iron
 #top_hat
 
-#Hard-coded version of player as dictionary, money as key, (money)amount as value.
-#Money can be modified as seen below.
 #-> basic_money_function is not needed anymore?/needs to be modified?
-def player_data_init():
-    battleship = {
-        'money':    150,
-        'position': 2,
-        'in_jail':  False,}
-    print('Battleship money:', battleship['money'])
-    battleship['money'] = battleship['money'] + 10
-    print('Battleship money + 10')
-    print('Battleship money:', battleship['money'])
-    print(battleship)
 
-#Source: http://www.compciv.org/guides/python/fundamentals/dictionaries-overview/
-# Iterating through key-value pairs with items()
-def player_data_print():
-    for key in battleship.keys():
-        val = battleship[key]
-        print(key,':',val)
-        # But this is not sorted. It prints the values at random order every time.
 ##############################################################################
 #This is a dice throw, it gives us a random number from a normal, 6-sided dice.
 #Source: http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
@@ -121,11 +95,6 @@ def dice_throw():
 #it should tell the player that 'you are on square (position).' before and after a roll.
 #Winner: make a list out of players in the game, if only one remains, wins.
 
-
-
-
-#Table squares (where the players can go by rolling the dice)
-#def square_1():
 
 
 ##############################################################################
