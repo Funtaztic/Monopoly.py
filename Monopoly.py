@@ -191,7 +191,7 @@ position_input = input()
 Player1.position = position_input
 
 print("Player1's position is " + str(Player1.position))
-print("What should be the next position for Player1?")
+print("Please press Enter to roll the dice for Player1")
 position_input = input()
-Player1.position = position_input
+Player1.position = dice_throw()
 print("Player1's position is " + str(Player1.position))
