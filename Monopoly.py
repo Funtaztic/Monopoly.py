@@ -61,11 +61,29 @@ class Player(object):
     self.name = name
     self.token = token
 
-Player1 = Player('Abel','Ship')
-Player2 = Player('Dora','Dog')
-Player3 = Player('John','Iron')
-Player4 = Player('Chris','Car')
+#Let's make a player name maker, that uses user input to make class instances.
 
+Player1_input_name = input("Player1, Please enter your name:")
+Player1_input_token = input("Player1, Please select a token:")
+
+Player2_input_name = input("Player2, Please enter your name:")
+Player2_input_token = input("Player2, Please select a token:")
+
+Player3_input_name = input("Player3, Please enter your name:")
+Player3_input_token = input("Player3, Please select a token:")
+
+Player4_input_name = input("Player4, Please enter your name:")
+Player4_input_token = input("Player4, Please select a token:")
+
+Player1 = Player(Player1_input_name,Player1_input_token)
+Player2 = Player(Player2_input_name,Player2_input_token)
+Player3 = Player(Player3_input_name,Player3_input_token)
+Player4 = Player(Player4_input_name,Player4_input_token)
+
+print(Player1.name, Player1.token)
+print(Player2.name, Player2.token)
+print(Player3.name, Player3.token)
+print(Player4.name, Player4.token)
 
 
 #remove last item from the dict, until number_of_players number of players remain.
