@@ -120,6 +120,26 @@ def dice_throw():
 ##############################################################################
 ##############################################################################
 ##############################################################################
+class Field(object):
+
+  def __init__(self, name, color, price, owner):
+    self.name = name
+    self.color = color
+    self.price = price
+    self.owner = owner
+
+Field1_instance_name  = "START"
+Field1_instance_color = "N/A"
+Field1_instance_price = -200
+Field1_instance_owner = "N/A"
+
+Field1 = Field(Field1_instance_name, Field1_instance_color, Field1_instance_price, Field1_instance_owner)
+
+print(Field1.name, Field1.color, Field1.price, Field1.owner)
+##############################################################################
+##############################################################################
+##############################################################################
+
 Field_0 = {
 "Name":      "START",
 "Color":     "N/A",
