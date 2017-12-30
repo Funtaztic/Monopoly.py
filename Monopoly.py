@@ -200,7 +200,86 @@ def Field_1():
     empty_useless_var = input("If you don't want to do anything, just press Enter.")
 
 ##############################################################################
-
+#Linear control flow with consecutive functions and dice roll
+# Comment keyboard shortcut in Atom: Ctrl + /
+# def dice_throw():
+#     from random import randint
+#     result = (randint(1,6))
+#     return(result)
+#
+# def Field_0():
+#   print('You are on Field 0')
+#   global dice_result
+#   print('Throw result:',dice_result)
+#   if dice_result == 0:
+#       print('*do stuff*')
+#   else:
+#       dice_result = dice_result - 1
+#       Field_1()
+#
+# def Field_1():
+#   print('You are on Field 1')
+#   global dice_result
+#   print('Throw result:',dice_result)
+#   if dice_result == 0:
+#       print('*do stuff*')
+#   else:
+#       dice_result = dice_result - 1
+#       Field_2()
+#
+# def Field_2():
+#   print('You are on Field 2')
+#   global dice_result
+#   print('Throw result:',dice_result)
+#   if dice_result == 0:
+#       print('*do stuff*')
+#   else:
+#       dice_result = dice_result - 1
+#       Field_3()
+#
+# def Field_3():
+#   print('You are on Field 3')
+#   global dice_result
+#   print('Throw result:',dice_result)
+#   if dice_result == 0:
+#       print('*do stuff*')
+#   else:
+#       dice_result = dice_result - 1
+#       Field_4()
+#
+# def Field_4():
+#   print('You are on Field 4')
+#   global dice_result
+#   print('Throw result:',dice_result)
+#   if dice_result == 0:
+#       print('*do stuff*')
+#   else:
+#       dice_result = dice_result - 1
+#       Field_5()
+#
+# def Field_5():
+#   print('You are on Field 5')
+#   global dice_result
+#   print('Throw result:',dice_result)
+#   if dice_result == 0:
+#       print('*do stuff*')
+#   else:
+#       dice_result = dice_result - 1
+#       Field_6()
+#
+# def Field_6():
+#   print('You are on Field 6')
+#   global dice_result
+#   print('Throw result:',dice_result)
+#   if dice_result == 0:
+#       print('*do stuff*')
+#   else:
+#       dice_result = dice_result - 1
+#       Field_1()
+#
+# dice_result = dice_throw()
+#
+# Field_0()
 ##############################################################################
 
 ##############################################################################
