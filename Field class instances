@@ -1,0 +1,221 @@
+class Field(object):
+
+  def __init__(self, name, color, price, owner):
+    self.name = name
+    self.color = color
+    self.price = price
+    self.owner = owner
+
+Field0_instance_name  = "START"
+Field0_instance_color = "N/A"
+Field0_instance_price = -200
+Field0_instance_owner = "N/A"
+
+Field1_instance_name  = "Mediterranean Avenue"
+Field1_instance_color = "Brown"
+Field1_instance_price = 60
+Field1_instance_owner = "N/A"
+
+Field2_instance_name  = "Community Chest"
+Field2_instance_color = "Blue Chest"
+Field2_instance_price = "N/A"
+Field2_instance_owner = "N/A"
+
+Field3_instance_name  = "Baltic Avenue"
+Field3_instance_color = "Brown"
+Field3_instance_price = 60
+Field3_instance_owner = "N/A"
+
+Field4_instance_name  = "Income Tax"
+Field4_instance_color = "N/A"
+Field4_instance_price = 200
+Field4_instance_owner = "N/A"
+
+Field5_instance_name  = "Reading Railroad"
+Field5_instance_color = "N/A"
+Field5_instance_price = 200
+Field5_instance_owner = "N/A"
+
+Field6_instance_name  = "Oriental Avenue"
+Field6_instance_color = "Teal"
+Field6_instance_price = 100
+Field6_instance_owner = "None"
+
+Field7_instance_name  = "Chance"
+Field7_instance_color = "N/A"
+Field7_instance_price = "N/A"
+Field7_instan8ce_owner = "N/A"
+
+Field8_instance_name  = "Vermont Avenue"
+Field8_instance_color = "Teal"
+Field8_instance_price = 100
+Field8_instance_owner = "None"
+
+Field9_instance_name  = "Connecticut Avenue"
+Field9_instance_color = "Teal"
+Field9_instance_price = 120
+Field9_instance_owner = "None"
+
+Field10_instance_name  = "Just Visiting (Jail)"
+Field10_instance_color = "N/A"
+Field10_instance_price = "N/A"
+Field10_instance_owner = "N/A"
+
+Field11_instance_name  = "St. Charles Place"
+Field11_instance_color = "Pink"
+Field11_instance_price = 140
+Field11_instance_owner = "None"
+
+Field12_instance_name  = "Electric Company"
+Field12_instance_color = "N/A"
+Field12_instance_price = 150
+Field12_instance_owner = "None"
+
+Field13_instance_name  = "States Avenue"
+Field13_instance_color = "Pink"
+Field13_instance_price = 140
+Field13_instance_owner = "None"
+
+Field14_instance_name  = "Virginia Avenue"
+Field14_instance_color = "Pink"
+Field14_instance_price = 160
+Field14_instance_owner = "None"
+
+Field15_instance_name  = "Pennsylvania Railroad"
+Field15_instance_color = "N/A"
+Field15_instance_price = 200
+Field15_instance_owner = "None"
+
+Field16_instance_name  = "St. James Place"
+Field16_instance_color = "Orange"
+Field16_instance_price = 180
+Field16_instance_owner = "None"
+
+Field17_instance_name  = "Community Chest"
+Field17_instance_color = "Blue Chest"
+Field17_instance_price = "N/A"
+Field17_instance_owner = "N/A"
+
+Field18_instance_name  = "Tennessee Avenue"
+Field18_instance_color = "Orange"
+Field18_instance_price = 180
+Field18_instance_owner = "None"
+
+Field19_instance_name  = "New York Avenue"
+Field19_instance_color = "Orange"
+Field19_instance_price = 200
+Field19_instance_owner = "None"
+
+Field20_instance_name  = "Free Parking"
+Field20_instance_color = "N/A"
+Field20_instance_price = "N/A"
+Field20_instance_owner = "N/A"
+
+Field21_instance_name  = "Kentucky Avenue"
+Field21_instance_color = "Red"
+Field21_instance_price = 220
+Field21_instance_owner = "None"
+
+Field22_instance_name  = "Chance"
+Field22_instance_color = "N/A"
+Field22_instance_price = "N/A"
+Field22_instance_owner = "N/A"
+
+Field23_instance_name  = "Indiana Avenue"
+Field23_instance_color = "Red"
+Field23_instance_price = 220
+Field23_instance_owner = "None"
+
+Field24_instance_name  = "Illinois Avenue"
+Field24_instance_color = "Red"
+Field24_instance_price = 240
+Field24_instance_owner = "None"
+
+Field25_instance_name  = "B. & O. Railroad"
+Field25_instance_color = "N/A"
+Field25_instance_price = 200
+Field25_instance_owner = "None"
+
+Field26_instance_name  = "Atlantic Avenue"
+Field26_instance_color = "Yellow"
+Field26_instance_price = 260
+Field26_instance_owner = "None"
+
+Field27_instance_name  = "Ventnor Avenue"
+Field27_instance_color = "Yellow"
+Field27_instance_price = 260
+Field27_instance_owner = "None"
+
+Field28_instance_name  = "Water Works"
+Field28_instance_color = "N/A"
+Field28_instance_price = 150
+Field28_instance_owner = "None"
+
+Field29_instance_name  = "Marvin Gardens"
+Field29_instance_color = "Yellow"
+Field29_instance_price = 280
+Field29_instance_owner = "None"
+
+Field30_instance_name  = "Go To Jail"
+Field30_instance_color = "N/A"
+Field30_instance_price = "N/A"
+Field30_instance_owner = "N/A"
+
+Field31_instance_name  = "Pacific Avenue"
+Field31_instance_color = "Green"
+Field31_instance_price = 300
+Field31_instance_owner = "None"
+
+Field32_instance_name  = "North Carolina Avenue"
+Field32_instance_color = "Green"
+Field32_instance_price = 300
+Field32_instance_owner = "None"
+
+Field33_instance_name  = "Community Chest"
+Field33_instance_color = "Blue Chest"
+Field33_instance_price = "N/A"
+Field33_instance_owner = "N/A"
+
+Field34_instance_name  = "Pennsylvania Avenue"
+Field34_instance_color = "Green"
+Field34_instance_price = 320
+Field34_instance_owner = "None"
+
+Field35_instance_name  = "Short Line"
+Field35_instance_color = "N/A"
+Field35_instance_price = 200
+Field35_instance_owner = "None"
+
+Field36_instance_name  = "Chance"
+Field36_instance_color = "N/A"
+Field36_instance_price = "N/A"
+Field36_instance_owner = "N/A"
+
+Field37_instance_name  = "Park Place"
+Field37_instance_color = "Blue"
+Field37_instance_price = 350
+Field37_instance_owner = "None"
+
+Field38_instance_name  = "Luxury Tax"
+Field38_instance_color = "N/A"
+Field38_instance_price = 100
+Field38_instance_owner = "N/A"
+
+Field39_instance_name  = "Broadwalk"
+Field39_instance_color = "Blue"
+Field39_instance_price = 400
+Field39_instance_owner = "None"
+
+Field0 = Field(Field0_instance_name, Field0_instance_color, Field0_instance_price, Field0_instance_owner)
+Field1 = Field(Field1_instance_name, Field1_instance_color, Field1_instance_price, Field1_instance_owner)
+Field2 = Field(Field2_instance_name, Field2_instance_color, Field2_instance_price, Field2_instance_owner)
+Field3 = Field(Field3_instance_name, Field3_instance_color, Field3_instance_price, Field3_instance_owner)
+Field4 = Field(Field4_instance_name, Field4_instance_color, Field4_instance_price, Field4_instance_owner)
+
+print(Field0.name, Field0.color, Field0.price, Field0.owner)
+print(Field1.name, Field1.color, Field1.price, Field1.owner)
+print(Field2.name, Field2.color, Field2.price, Field2.owner)
+print(Field3.name, Field3.color, Field3.price, Field3.owner)
+print(Field4.name, Field4.color, Field4.price, Field4.owner)
+
+print('Addition: ', Field0.price + Field1.price)
