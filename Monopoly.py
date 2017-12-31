@@ -63,7 +63,7 @@ class Player(object):
     self.name = name
     self.token = token
 
-#Let's make a player name maker, that uses user input to make class instances.
+#Let's make a player name maker, that uses user input to make class insts.
 
 Player1_input_name = input("Player1, Please enter your name:")
 Player1_input_token = input("Player1, Please select a token:")
@@ -128,246 +128,246 @@ class Field(object):
     self.price = price
     self.owner = owner
 
-Field0_instance_name  = "START"
-Field0_instance_color = "N/A"
-Field0_instance_price = -200
-Field0_instance_owner = "N/A"
+Field0_inst_name  = "START"
+Field0_inst_color = "N/A"
+Field0_inst_price = -200
+Field0_inst_owner = "N/A"
 
-Field1_instance_name  = "Mediterranean Avenue"
-Field1_instance_color = "Brown"
-Field1_instance_price = 60
-Field1_instance_owner = "N/A"
+Field1_inst_name  = "Mediterranean Avenue"
+Field1_inst_color = "Brown"
+Field1_inst_price = 60
+Field1_inst_owner = "N/A"
 
-Field2_instance_name  = "Community Chest"
-Field2_instance_color = "Blue Chest"
-Field2_instance_price = "N/A"
-Field2_instance_owner = "N/A"
+Field2_inst_name  = "Community Chest"
+Field2_inst_color = "Blue Chest"
+Field2_inst_price = "N/A"
+Field2_inst_owner = "N/A"
 
-Field3_instance_name  = "Baltic Avenue"
-Field3_instance_color = "Brown"
-Field3_instance_price = 60
-Field3_instance_owner = "N/A"
+Field3_inst_name  = "Baltic Avenue"
+Field3_inst_color = "Brown"
+Field3_inst_price = 60
+Field3_inst_owner = "N/A"
 
-Field4_instance_name  = "Income Tax"
-Field4_instance_color = "N/A"
-Field4_instance_price = 200
-Field4_instance_owner = "N/A"
+Field4_inst_name  = "Income Tax"
+Field4_inst_color = "N/A"
+Field4_inst_price = 200
+Field4_inst_owner = "N/A"
 
-Field5_instance_name  = "Reading Railroad"
-Field5_instance_color = "N/A"
-Field5_instance_price = 200
-Field5_instance_owner = "N/A"
+Field5_inst_name  = "Reading Railroad"
+Field5_inst_color = "N/A"
+Field5_inst_price = 200
+Field5_inst_owner = "N/A"
 
-Field6_instance_name  = "Oriental Avenue"
-Field6_instance_color = "Teal"
-Field6_instance_price = 100
-Field6_instance_owner = "None"
+Field6_inst_name  = "Oriental Avenue"
+Field6_inst_color = "Teal"
+Field6_inst_price = 100
+Field6_inst_owner = "N/A"
 
-Field7_instance_name  = "Chance"
-Field7_instance_color = "N/A"
-Field7_instance_price = "N/A"
-Field7_instance_owner = "N/A"
+Field7_inst_name  = "Chance"
+Field7_inst_color = "N/A"
+Field7_inst_price = "N/A"
+Field7_inst_owner = "N/A"
 
-Field8_instance_name  = "Vermont Avenue"
-Field8_instance_color = "Teal"
-Field8_instance_price = 100
-Field8_instance_owner = "None"
+Field8_inst_name  = "Vermont Avenue"
+Field8_inst_color = "Teal"
+Field8_inst_price = 100
+Field8_inst_owner = "N/A"
 
-Field9_instance_name  = "Connecticut Avenue"
-Field9_instance_color = "Teal"
-Field9_instance_price = 120
-Field9_instance_owner = "None"
+Field9_inst_name  = "Connecticut Avenue"
+Field9_inst_color = "Teal"
+Field9_inst_price = 120
+Field9_inst_owner = "N/A"
 
-Field10_instance_name  = "Just Visiting (Jail)"
-Field10_instance_color = "N/A"
-Field10_instance_price = "N/A"
-Field10_instance_owner = "N/A"
+Field10_inst_name  = "Just Visiting (Jail)"
+Field10_inst_color = "N/A"
+Field10_inst_price = "N/A"
+Field10_inst_owner = "N/A"
 
-Field11_instance_name  = "St. Charles Place"
-Field11_instance_color = "Pink"
-Field11_instance_price = 140
-Field11_instance_owner = "None"
+Field11_inst_name  = "St. Charles Place"
+Field11_inst_color = "Pink"
+Field11_inst_price = 140
+Field11_inst_owner = "N/A"
 
-Field12_instance_name  = "Electric Company"
-Field12_instance_color = "N/A"
-Field12_instance_price = 150
-Field12_instance_owner = "None"
+Field12_inst_name  = "Electric Company"
+Field12_inst_color = "N/A"
+Field12_inst_price = 150
+Field12_inst_owner = "N/A"
 
-Field13_instance_name  = "States Avenue"
-Field13_instance_color = "Pink"
-Field13_instance_price = 140
-Field13_instance_owner = "None"
+Field13_inst_name  = "States Avenue"
+Field13_inst_color = "Pink"
+Field13_inst_price = 140
+Field13_inst_owner = "N/A"
 
-Field14_instance_name  = "Virginia Avenue"
-Field14_instance_color = "Pink"
-Field14_instance_price = 160
-Field14_instance_owner = "None"
+Field14_inst_name  = "Virginia Avenue"
+Field14_inst_color = "Pink"
+Field14_inst_price = 160
+Field14_inst_owner = "N/A"
 
-Field15_instance_name  = "Pennsylvania Railroad"
-Field15_instance_color = "N/A"
-Field15_instance_price = 200
-Field15_instance_owner = "None"
+Field15_inst_name  = "Pennsylvania Railroad"
+Field15_inst_color = "N/A"
+Field15_inst_price = 200
+Field15_inst_owner = "N/A"
 
-Field16_instance_name  = "St. James Place"
-Field16_instance_color = "Orange"
-Field16_instance_price = 180
-Field16_instance_owner = "None"
+Field16_inst_name  = "St. James Place"
+Field16_inst_color = "Orange"
+Field16_inst_price = 180
+Field16_inst_owner = "N/A"
 
-Field17_instance_name  = "Community Chest"
-Field17_instance_color = "Blue Chest"
-Field17_instance_price = "N/A"
-Field17_instance_owner = "N/A"
+Field17_inst_name  = "Community Chest"
+Field17_inst_color = "Blue Chest"
+Field17_inst_price = "N/A"
+Field17_inst_owner = "N/A"
 
-Field18_instance_name  = "Tennessee Avenue"
-Field18_instance_color = "Orange"
-Field18_instance_price = 180
-Field18_instance_owner = "None"
+Field18_inst_name  = "Tennessee Avenue"
+Field18_inst_color = "Orange"
+Field18_inst_price = 180
+Field18_inst_owner = "N/A"
 
-Field19_instance_name  = "New York Avenue"
-Field19_instance_color = "Orange"
-Field19_instance_price = 200
-Field19_instance_owner = "None"
+Field19_inst_name  = "New York Avenue"
+Field19_inst_color = "Orange"
+Field19_inst_price = 200
+Field19_inst_owner = "N/A"
 
-Field20_instance_name  = "Free Parking"
-Field20_instance_color = "N/A"
-Field20_instance_price = "N/A"
-Field20_instance_owner = "N/A"
+Field20_inst_name  = "Free Parking"
+Field20_inst_color = "N/A"
+Field20_inst_price = "N/A"
+Field20_inst_owner = "N/A"
 
-Field21_instance_name  = "Kentucky Avenue"
-Field21_instance_color = "Red"
-Field21_instance_price = 220
-Field21_instance_owner = "None"
+Field21_inst_name  = "Kentucky Avenue"
+Field21_inst_color = "Red"
+Field21_inst_price = 220
+Field21_inst_owner = "N/A"
 
-Field22_instance_name  = "Chance"
-Field22_instance_color = "N/A"
-Field22_instance_price = "N/A"
-Field22_instance_owner = "N/A"
+Field22_inst_name  = "Chance"
+Field22_inst_color = "N/A"
+Field22_inst_price = "N/A"
+Field22_inst_owner = "N/A"
 
-Field23_instance_name  = "Indiana Avenue"
-Field23_instance_color = "Red"
-Field23_instance_price = 220
-Field23_instance_owner = "None"
+Field23_inst_name  = "Indiana Avenue"
+Field23_inst_color = "Red"
+Field23_inst_price = 220
+Field23_inst_owner = "N/A"
 
-Field24_instance_name  = "Illinois Avenue"
-Field24_instance_color = "Red"
-Field24_instance_price = 240
-Field24_instance_owner = "None"
+Field24_inst_name  = "Illinois Avenue"
+Field24_inst_color = "Red"
+Field24_inst_price = 240
+Field24_inst_owner = "N/A"
 
-Field25_instance_name  = "B. & O. Railroad"
-Field25_instance_color = "N/A"
-Field25_instance_price = 200
-Field25_instance_owner = "None"
+Field25_inst_name  = "B. & O. Railroad"
+Field25_inst_color = "N/A"
+Field25_inst_price = 200
+Field25_inst_owner = "N/A"
 
-Field26_instance_name  = "Atlantic Avenue"
-Field26_instance_color = "Yellow"
-Field26_instance_price = 260
-Field26_instance_owner = "None"
+Field26_inst_name  = "Atlantic Avenue"
+Field26_inst_color = "Yellow"
+Field26_inst_price = 260
+Field26_inst_owner = "N/A"
 
-Field27_instance_name  = "Ventnor Avenue"
-Field27_instance_color = "Yellow"
-Field27_instance_price = 260
-Field27_instance_owner = "None"
+Field27_inst_name  = "Ventnor Avenue"
+Field27_inst_color = "Yellow"
+Field27_inst_price = 260
+Field27_inst_owner = "N/A"
 
-Field28_instance_name  = "Water Works"
-Field28_instance_color = "N/A"
-Field28_instance_price = 150
-Field28_instance_owner = "None"
+Field28_inst_name  = "Water Works"
+Field28_inst_color = "N/A"
+Field28_inst_price = 150
+Field28_inst_owner = "N/A"
 
-Field29_instance_name  = "Marvin Gardens"
-Field29_instance_color = "Yellow"
-Field29_instance_price = 280
-Field29_instance_owner = "None"
+Field29_inst_name  = "Marvin Gardens"
+Field29_inst_color = "Yellow"
+Field29_inst_price = 280
+Field29_inst_owner = "N/A"
 
-Field30_instance_name  = "Go To Jail"
-Field30_instance_color = "N/A"
-Field30_instance_price = "N/A"
-Field30_instance_owner = "N/A"
+Field30_inst_name  = "Go To Jail"
+Field30_inst_color = "N/A"
+Field30_inst_price = "N/A"
+Field30_inst_owner = "N/A"
 
-Field31_instance_name  = "Pacific Avenue"
-Field31_instance_color = "Green"
-Field31_instance_price = 300
-Field31_instance_owner = "None"
+Field31_inst_name  = "Pacific Avenue"
+Field31_inst_color = "Green"
+Field31_inst_price = 300
+Field31_inst_owner = "N/A"
 
-Field32_instance_name  = "North Carolina Avenue"
-Field32_instance_color = "Green"
-Field32_instance_price = 300
-Field32_instance_owner = "None"
+Field32_inst_name  = "North Carolina Avenue"
+Field32_inst_color = "Green"
+Field32_inst_price = 300
+Field32_inst_owner = "N/A"
 
-Field33_instance_name  = "Community Chest"
-Field33_instance_color = "Blue Chest"
-Field33_instance_price = "N/A"
-Field33_instance_owner = "N/A"
+Field33_inst_name  = "Community Chest"
+Field33_inst_color = "Blue Chest"
+Field33_inst_price = "N/A"
+Field33_inst_owner = "N/A"
 
-Field34_instance_name  = "Pennsylvania Avenue"
-Field34_instance_color = "Green"
-Field34_instance_price = 320
-Field34_instance_owner = "None"
+Field34_inst_name  = "Pennsylvania Avenue"
+Field34_inst_color = "Green"
+Field34_inst_price = 320
+Field34_inst_owner = "N/A"
 
-Field35_instance_name  = "Short Line"
-Field35_instance_color = "N/A"
-Field35_instance_price = 200
-Field35_instance_owner = "None"
+Field35_inst_name  = "Short Line"
+Field35_inst_color = "N/A"
+Field35_inst_price = 200
+Field35_inst_owner = "N/A"
 
-Field36_instance_name  = "Chance"
-Field36_instance_color = "N/A"
-Field36_instance_price = "N/A"
-Field36_instance_owner = "N/A"
+Field36_inst_name  = "Chance"
+Field36_inst_color = "N/A"
+Field36_inst_price = "N/A"
+Field36_inst_owner = "N/A"
 
-Field37_instance_name  = "Park Place"
-Field37_instance_color = "Blue"
-Field37_instance_price = 350
-Field37_instance_owner = "None"
+Field37_inst_name  = "Park Place"
+Field37_inst_color = "Blue"
+Field37_inst_price = 350
+Field37_inst_owner = "N/A"
 
-Field38_instance_name  = "Luxury Tax"
-Field38_instance_color = "N/A"
-Field38_instance_price = 100
-Field38_instance_owner = "N/A"
+Field38_inst_name  = "Luxury Tax"
+Field38_inst_color = "N/A"
+Field38_inst_price = 100
+Field38_inst_owner = "N/A"
 
-Field39_instance_name  = "Broadwalk"
-Field39_instance_color = "Blue"
-Field39_instance_price = 400
-Field39_instance_owner = "None"
+Field39_inst_name  = "Broadwalk"
+Field39_inst_color = "Blue"
+Field39_inst_price = 400
+Field39_inst_owner = "N/A"
 
-Field0 = Field(Field0_instance_name,  Field0_instance_color,  Field0_instance_price, Field0_instance_owner)
-Field1 = Field(Field1_instance_name,  Field1_instance_color,  Field1_instance_price, Field1_instance_owner)
-Field2 = Field(Field2_instance_name,  Field2_instance_color,  Field2_instance_price, Field2_instance_owner)
-Field3 = Field(Field3_instance_name,  Field3_instance_color,  Field3_instance_price, Field3_instance_owner)
-Field4 = Field(Field4_instance_name,  Field4_instance_color,  Field4_instance_price, Field4_instance_owner)
-Field5 = Field(Field5_instance_name,  Field5_instance_color,  Field5_instance_price, Field5_instance_owner)
-Field6 = Field(Field6_instance_name,  Field6_instance_color,  Field6_instance_price, Field6_instance_owner)
-Field7 = Field(Field7_instance_name,  Field7_instance_color,  Field7_instance_price, Field7_instance_owner)
-Field8 = Field(Field8_instance_name,  Field8_instance_color,  Field8_instance_price, Field8_instance_owner)
-Field9 = Field(Field9_instance_name,  Field9_instance_color,  Field9_instance_price, Field9_instance_owner)
-Field10 = Field(Field10_instance_name,  Field10_instance_color,  Field10_instance_price, Field10_instance_owner)
-Field11 = Field(Field11_instance_name,  Field11_instance_color,  Field11_instance_price, Field11_instance_owner)
-Field12 = Field(Field12_instance_name,  Field12_instance_color,  Field12_instance_price, Field12_instance_owner)
-Field13 = Field(Field13_instance_name,  Field13_instance_color,  Field13_instance_price, Field13_instance_owner)
-Field14 = Field(Field14_instance_name,  Field14_instance_color,  Field14_instance_price, Field14_instance_owner)
-Field15 = Field(Field15_instance_name,  Field15_instance_color,  Field15_instance_price, Field15_instance_owner)
-Field16 = Field(Field16_instance_name,  Field16_instance_color,  Field16_instance_price, Field16_instance_owner)
-Field17 = Field(Field17_instance_name,  Field17_instance_color,  Field17_instance_price, Field17_instance_owner)
-Field18 = Field(Field18_instance_name,  Field18_instance_color,  Field18_instance_price, Field18_instance_owner)
-Field19 = Field(Field19_instance_name,  Field19_instance_color,  Field19_instance_price, Field19_instance_owner)
-Field20 = Field(Field20_instance_name,  Field20_instance_color,  Field20_instance_price, Field20_instance_owner)
-Field21 = Field(Field21_instance_name,  Field21_instance_color,  Field21_instance_price, Field21_instance_owner)
-Field22 = Field(Field22_instance_name,  Field22_instance_color,  Field22_instance_price, Field22_instance_owner)
-Field23 = Field(Field23_instance_name,  Field23_instance_color,  Field23_instance_price, Field23_instance_owner)
-Field24 = Field(Field24_instance_name,  Field24_instance_color,  Field24_instance_price, Field24_instance_owner)
-Field25 = Field(Field25_instance_name,  Field25_instance_color,  Field25_instance_price, Field25_instance_owner)
-Field26 = Field(Field26_instance_name,  Field26_instance_color,  Field26_instance_price, Field26_instance_owner)
-Field27 = Field(Field27_instance_name,  Field27_instance_color,  Field27_instance_price, Field27_instance_owner)
-Field28 = Field(Field28_instance_name,  Field28_instance_color,  Field28_instance_price, Field28_instance_owner)
-Field29 = Field(Field29_instance_name,  Field29_instance_color,  Field29_instance_price, Field29_instance_owner)
-Field30 = Field(Field30_instance_name,  Field30_instance_color,  Field30_instance_price, Field30_instance_owner)
-Field31 = Field(Field31_instance_name,  Field31_instance_color,  Field31_instance_price, Field31_instance_owner)
-Field32 = Field(Field32_instance_name,  Field32_instance_color,  Field32_instance_price, Field32_instance_owner)
-Field33 = Field(Field33_instance_name,  Field33_instance_color,  Field33_instance_price, Field33_instance_owner)
-Field34 = Field(Field34_instance_name,  Field34_instance_color,  Field34_instance_price, Field34_instance_owner)
-Field35 = Field(Field35_instance_name,  Field35_instance_color,  Field35_instance_price, Field35_instance_owner)
-Field36 = Field(Field36_instance_name,  Field36_instance_color,  Field36_instance_price, Field36_instance_owner)
-Field37 = Field(Field37_instance_name,  Field37_instance_color,  Field37_instance_price, Field37_instance_owner)
-Field38 = Field(Field38_instance_name,  Field38_instance_color,  Field38_instance_price, Field38_instance_owner)
-Field39 = Field(Field39_instance_name,  Field39_instance_color,  Field39_instance_price, Field39_instance_owner)
+Field0 = Field(Field0_inst_name,  Field0_inst_color,  Field0_inst_price, Field0_inst_owner)
+Field1 = Field(Field1_inst_name,  Field1_inst_color,  Field1_inst_price, Field1_inst_owner)
+Field2 = Field(Field2_inst_name,  Field2_inst_color,  Field2_inst_price, Field2_inst_owner)
+Field3 = Field(Field3_inst_name,  Field3_inst_color,  Field3_inst_price, Field3_inst_owner)
+Field4 = Field(Field4_inst_name,  Field4_inst_color,  Field4_inst_price, Field4_inst_owner)
+Field5 = Field(Field5_inst_name,  Field5_inst_color,  Field5_inst_price, Field5_inst_owner)
+Field6 = Field(Field6_inst_name,  Field6_inst_color,  Field6_inst_price, Field6_inst_owner)
+Field7 = Field(Field7_inst_name,  Field7_inst_color,  Field7_inst_price, Field7_inst_owner)
+Field8 = Field(Field8_inst_name,  Field8_inst_color,  Field8_inst_price, Field8_inst_owner)
+Field9 = Field(Field9_inst_name,  Field9_inst_color,  Field9_inst_price, Field9_inst_owner)
+Field10 = Field(Field10_inst_name,  Field10_inst_color,  Field10_inst_price, Field10_inst_owner)
+Field11 = Field(Field11_inst_name,  Field11_inst_color,  Field11_inst_price, Field11_inst_owner)
+Field12 = Field(Field12_inst_name,  Field12_inst_color,  Field12_inst_price, Field12_inst_owner)
+Field13 = Field(Field13_inst_name,  Field13_inst_color,  Field13_inst_price, Field13_inst_owner)
+Field14 = Field(Field14_inst_name,  Field14_inst_color,  Field14_inst_price, Field14_inst_owner)
+Field15 = Field(Field15_inst_name,  Field15_inst_color,  Field15_inst_price, Field15_inst_owner)
+Field16 = Field(Field16_inst_name,  Field16_inst_color,  Field16_inst_price, Field16_inst_owner)
+Field17 = Field(Field17_inst_name,  Field17_inst_color,  Field17_inst_price, Field17_inst_owner)
+Field18 = Field(Field18_inst_name,  Field18_inst_color,  Field18_inst_price, Field18_inst_owner)
+Field19 = Field(Field19_inst_name,  Field19_inst_color,  Field19_inst_price, Field19_inst_owner)
+Field20 = Field(Field20_inst_name,  Field20_inst_color,  Field20_inst_price, Field20_inst_owner)
+Field21 = Field(Field21_inst_name,  Field21_inst_color,  Field21_inst_price, Field21_inst_owner)
+Field22 = Field(Field22_inst_name,  Field22_inst_color,  Field22_inst_price, Field22_inst_owner)
+Field23 = Field(Field23_inst_name,  Field23_inst_color,  Field23_inst_price, Field23_inst_owner)
+Field24 = Field(Field24_inst_name,  Field24_inst_color,  Field24_inst_price, Field24_inst_owner)
+Field25 = Field(Field25_inst_name,  Field25_inst_color,  Field25_inst_price, Field25_inst_owner)
+Field26 = Field(Field26_inst_name,  Field26_inst_color,  Field26_inst_price, Field26_inst_owner)
+Field27 = Field(Field27_inst_name,  Field27_inst_color,  Field27_inst_price, Field27_inst_owner)
+Field28 = Field(Field28_inst_name,  Field28_inst_color,  Field28_inst_price, Field28_inst_owner)
+Field29 = Field(Field29_inst_name,  Field29_inst_color,  Field29_inst_price, Field29_inst_owner)
+Field30 = Field(Field30_inst_name,  Field30_inst_color,  Field30_inst_price, Field30_inst_owner)
+Field31 = Field(Field31_inst_name,  Field31_inst_color,  Field31_inst_price, Field31_inst_owner)
+Field32 = Field(Field32_inst_name,  Field32_inst_color,  Field32_inst_price, Field32_inst_owner)
+Field33 = Field(Field33_inst_name,  Field33_inst_color,  Field33_inst_price, Field33_inst_owner)
+Field34 = Field(Field34_inst_name,  Field34_inst_color,  Field34_inst_price, Field34_inst_owner)
+Field35 = Field(Field35_inst_name,  Field35_inst_color,  Field35_inst_price, Field35_inst_owner)
+Field36 = Field(Field36_inst_name,  Field36_inst_color,  Field36_inst_price, Field36_inst_owner)
+Field37 = Field(Field37_inst_name,  Field37_inst_color,  Field37_inst_price, Field37_inst_owner)
+Field38 = Field(Field38_inst_name,  Field38_inst_color,  Field38_inst_price, Field38_inst_owner)
+Field39 = Field(Field39_inst_name,  Field39_inst_color,  Field39_inst_price, Field39_inst_owner)
 
 print(Field0.name, Field0.color, Field0.price, Field0.owner)
 print(Field1.name, Field1.color, Field1.price, Field1.owner)
@@ -437,30 +437,52 @@ print(Field39.name, Field39.color, Field39.price, Field39.owner)
 ##############################################################################
 # Linear control flow with consecutive functions and dice roll
 # Comment keyboard shortcut in Atom: Ctrl + /
-# def dice_throw():
-#     from random import randint
-#     result = (randint(1,6))
-#     return(result)
+# def dice_throw(): -> this has already been done above. (row 103)
 #
-# def Field_0():
-#   print('You are on Field 0')
-#   global dice_result
-#   print('Throw result:',dice_result)
-#   if dice_result == 0:
-#       print('*do stuff*')
-#   else:
-#       dice_result = dice_result - 1
-#       Field_1()
-#
-# def Field_1():
-#   print('You are on Field 1')
-#   global dice_result
-#   print('Throw result:',dice_result)
-#   if dice_result == 0:
-#       print('*do stuff*')
-#   else:
-#       dice_result = dice_result - 1
-#       Field_2()
+def Field_0():
+  print('You are on Field 0')
+  dice_result = dice_throw()
+  # global dice_result
+  # print('Throw result:',dice_result)
+  # let's make dice_result = 0 just to test the below if statement:
+  dice_result = 0
+  if dice_result == 0:
+      print(Field0.name, Field0.color, Field0.price, Field0.owner)
+      if Field0.owner == "N/A":
+          answer = input('Do you want to buy this property? (Y/N)')
+          answer = str(answer.upper())
+          if answer == 'Y' and Player1.money >= Field0.price:
+              Player1.money -= Field0.price
+              Field0.owner = Player1.name
+              print('Player 1 money:', Player1.money)
+              print("Field 1's owner:", Field0.owner)
+          elif answer == 'Y' and Player1.money < Field0.price:
+              print('You do not have enough money.')
+              #Here shold be the generic player loop
+              Field_0() #This way the player gets to throw again.
+          elif answer == 'N':
+              Field_1()
+      elif Field0_owner == Player1.name:
+          print ('*You should be able to buy houses in this part*')
+          Field_0() #This way the player gets to throw again.
+          # This does not work this way, some more Field_N functions may be needed for this to work well.
+  else:
+      dice_result = dice_result - 1
+      Field_1()
+
+def Field_1():
+  print('You are on Field 1')
+  dice_result = dice_throw()
+  # global dice_result
+  print('Throw result:',dice_result)
+  if dice_result == 0:
+      print('*do stuff*')
+  else:
+      dice_result = dice_result - 1
+      Field_2()
+
+def Field_2():
+  print("There is no Field_2() yet.")
 #
 # def Field_2():
 #   print('You are on Field 2')
@@ -548,4 +570,4 @@ print("Please press Enter to roll the dice for Player1")
 position_input = input()
 Player1.position = dice_throw()
 print("Player1's position is " + str(Player1.position))
-Field_1()
+Field_0()
