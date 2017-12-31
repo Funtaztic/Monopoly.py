@@ -1,322 +1,42 @@
-#This file will contain the text of the table.
+Field0=Field(Field0_instance_name,Field0_instance_color,Field0_instance_price,Field0_instance_owner)
 
-
-#---------------------------------------------#
-Field_0 = {
-"Name":      "START",
-"Color":     "N/A",
-"Price":     -200,
-"Owner":     "N/A",
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_1 = {
-"Name":      "Mediterranean Avenue"
-"Color":     "Brown"
-"Price":     60
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_2 = {
-"Name":      "Community Chest"
-"Color":     "Blue Chest"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_3 = {
-"Name":      "Baltic Avenue"
-"Color":     "Brown"
-"Price":     60
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_4 = {
-"Name":      "Income Tax"
-"Color":     "N/A"
-"Price":     200
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_5 = {
-"Name":      "Reading Railroad"
-"Color":     "N/A"
-"Price":     200
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_6 = {
-"Name":      "Oriental Avenue"
-"Color":     "Teal"
-"Price":     100
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_7 = {
-"Name":      "Chance"
-"Color":     "N/A"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_8 = {
-"Name":      "Vermont Avenue"
-"Color":     "Teal"
-"Price":     100
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_9 = {
-"Name":      "Connecticut Avenue"
-"Color":     "Teal"
-"Price":     120
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_10 = {
-"Name":      "Just Visiting (Jail)"
-"Color":     "N/A"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_11 = {
-"Name":      "St. Charles Place"
-"Color":     "Pink"
-"Price":     140
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_12 = {
-"Name":      "Electric Company"
-"Color":     "N/A"
-"Price":     150
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_13 = {
-"Name":      "States Avenue"
-"Color":     "Pink"
-"Price":     140
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_14 = {
-"Name":      "Virginia Avenue"
-"Color":     "Pink"
-"Price":     160
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_15 = {
-"Name":      "Pennsylvania Railroad"
-"Color":     "N/A"
-"Price":     200
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_16 = {
-"Name":      "St. James Place"
-"Color":     "Orange"
-"Price":     180
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_17 = {
-"Name":      "Community Chest"
-"Color":     "Blue Chest"
-"Price":     "N/A"
-"Owner":     "N/A"
-#---------------------------------------------#
-#---------------------------------------------#
-Field_18 = {
-"Name":      "Tennessee Avenue"
-"Color":     "Orange"
-"Price":     180
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_19 = {
-"Name":      "New York Avenue"
-"Color":     "Orange"
-"Price":     200
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_20 = {
-"Name":      "Free Parking"
-"Color":     "N/A"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_21 = {
-"Name":      "Kentucky Avenue"
-"Color":     "Red"
-"Price":     220
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_22 = {
-"Name":      "Chance"
-"Color":     "N/A"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_23 = {
-"Name":      "Indiana Avenue"
-"Color":     "Red"
-"Price":     220
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_24 = {
-"Name":      "Illinois Avenue"
-"Color":     "Red"
-"Price":     240
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_25 = {
-"Name":      "B. & O. Railroad"
-"Color":     "N/A"
-"Price":     200
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_26 = {
-"Name":      "Atlantic Avenue"
-"Color":     "Yellow"
-"Price":     260
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_27 = {
-"Name":      "Ventnor Avenue"
-"Color":     "Yellow"
-"Price":     260
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_28 = {
-"Name":      "Water Works"
-"Color":     "N/A"
-"Price":     150
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_29 = {
-"Name":      "Marvin Gardens"
-"Color":     "Yellow"
-"Price":     280
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_30 = {
-"Name":      "Go To Jail"
-"Color":     "N/A"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_31 = {
-"Name":      "Pacific Avenue"
-"Color":     "Green"
-"Price":     300
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_32 = {
-"Name":      "North Carolina Avenue"
-"Color":     "Green"
-"Price":     300
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_33 = {
-"Name":      "Community Chest"
-"Color":     "Blue Chest"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_34 = {
-"Name":      "Pennsylvania Avenue"
-"Color":     "Green"
-"Price":     320
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_35 = {
-"Name":      "Short Line"
-"Color":     "N/A"
-"Price":     200
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_36 = {
-"Name":      "Chance"
-"Color":     "N/A"
-"Price":     "N/A"
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_37 = {
-"Name":      "Park Place"
-"Color":     "Blue"
-"Price":     350
-"Owner":     "None"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_38 = {
-"Name":      "Luxury Tax"
-"Color":     "N/A"
-"Price":     100
-"Owner":     "N/A"
-}
-#---------------------------------------------#
-#---------------------------------------------#
-Field_39 = {
-"Name":      "Broadwalk"
-"Color":     "Blue"
-"Price":     400
-"Owner":     "None"
-}
-#---------------------------------------------#
+Field0 = Field(Field0_instance_name,  Field0_instance_color,  Field0_instance_price, Field0_instance_owner)
+Field1 = Field(Field1_instance_name,  Field1_instance_color,  Field1_instance_price, Field1_instance_owner)
+Field2 = Field(Field2_instance_name,  Field2_instance_color,  Field2_instance_price, Field2_instance_owner)
+Field3 = Field(Field3_instance_name,  Field3_instance_color,  Field3_instance_price, Field3_instance_owner)
+Field4 = Field(Field4_instance_name,  Field4_instance_color,  Field4_instance_price, Field4_instance_owner)
+Field5 = Field(Field5_instance_name,  Field5_instance_color,  Field5_instance_price, Field5_instance_owner)
+Field6 = Field(Field6_instance_name,  Field6_instance_color,  Field6_instance_price, Field6_instance_owner)
+Field7 = Field(Field7_instance_name,  Field7_instance_color,  Field7_instance_price, Field7_instance_owner)
+Field8 = Field(Field8_instance_name,  Field8_instance_color,  Field8_instance_price, Field8_instance_owner)
+Field9 = Field(Field9_instance_name,  Field9_instance_color,  Field9_instance_price, Field9_instance_owner)
+Field10 = Field(Field10_instance_name,  Field10_instance_color,  Field10_instance_price, Field10_instance_owner)
+Field11 = Field(Field11_instance_name,  Field11_instance_color,  Field11_instance_price, Field11_instance_owner)
+Field12 = Field(Field12_instance_name,  Field12_instance_color,  Field12_instance_price, Field12_instance_owner)
+Field13 = Field(Field13_instance_name,  Field13_instance_color,  Field13_instance_price, Field13_instance_owner)
+Field14 = Field(Field14_instance_name,  Field14_instance_color,  Field14_instance_price, Field14_instance_owner)
+Field15 = Field(Field15_instance_name,  Field15_instance_color,  Field15_instance_price, Field15_instance_owner)
+Field16 = Field(Field16_instance_name,  Field16_instance_color,  Field16_instance_price, Field16_instance_owner)
+Field17 = Field(Field17_instance_name,  Field17_instance_color,  Field17_instance_price, Field17_instance_owner)
+Field18 = Field(Field18_instance_name,  Field18_instance_color,  Field18_instance_price, Field18_instance_owner)
+Field19 = Field(Field19_instance_name,  Field19_instance_color,  Field19_instance_price, Field19_instance_owner)
+Field20 = Field(Field20_instance_name,  Field20_instance_color,  Field20_instance_price, Field20_instance_owner)
+Field21 = Field(Field21_instance_name,  Field21_instance_color,  Field21_instance_price, Field21_instance_owner)
+Field22 = Field(Field22_instance_name,  Field22_instance_color,  Field22_instance_price, Field22_instance_owner)
+Field23 = Field(Field23_instance_name,  Field23_instance_color,  Field23_instance_price, Field23_instance_owner)
+Field24 = Field(Field24_instance_name,  Field24_instance_color,  Field24_instance_price, Field24_instance_owner)
+Field25 = Field(Field25_instance_name,  Field25_instance_color,  Field25_instance_price, Field25_instance_owner)
+Field26 = Field(Field26_instance_name,  Field26_instance_color,  Field26_instance_price, Field26_instance_owner)
+Field27 = Field(Field27_instance_name,  Field27_instance_color,  Field27_instance_price, Field27_instance_owner)
+Field28 = Field(Field28_instance_name,  Field28_instance_color,  Field28_instance_price, Field28_instance_owner)
+Field29 = Field(Field29_instance_name,  Field29_instance_color,  Field29_instance_price, Field29_instance_owner)
+Field30 = Field(Field30_instance_name,  Field30_instance_color,  Field30_instance_price, Field30_instance_owner)
+Field31 = Field(Field31_instance_name,  Field31_instance_color,  Field31_instance_price, Field31_instance_owner)
+Field32 = Field(Field32_instance_name,  Field32_instance_color,  Field32_instance_price, Field32_instance_owner)
+Field33 = Field(Field33_instance_name,  Field33_instance_color,  Field33_instance_price, Field33_instance_owner)
+Field34 = Field(Field34_instance_name,  Field34_instance_color,  Field34_instance_price, Field34_instance_owner)
+Field35 = Field(Field35_instance_name,  Field35_instance_color,  Field35_instance_price, Field35_instance_owner)
+Field36 = Field(Field36_instance_name,  Field36_instance_color,  Field36_instance_price, Field36_instance_owner)
+Field37 = Field(Field37_instance_name,  Field37_instance_color,  Field37_instance_price, Field37_instance_owner)
+Field38 = Field(Field38_instance_name,  Field38_instance_color,  Field38_instance_price, Field38_instance_owner)
+Field39 = Field(Field39_instance_name,  Field39_instance_color,  Field39_instance_price, Field39_instance_owner)

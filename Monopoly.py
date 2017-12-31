@@ -182,25 +182,25 @@ Field_4 = {
 #MAKE ActivePlayer.money work! var needed! global var!
 
 ##############################################################################
-def Field_1():
-    global Player1
-    print("You are on", Field_1.Name)
-    if Field_1.Owner == "N/A":
-        player_wants_to_buy = input("Do you want to buy it? (Y/N)")
-        player_wants_to_buy.upper()
-        if player_wants_to_buy == "Y" and Player1.money >= Field_1.Price:
-            Player1.money = Player1.money - Field_1.Price
-            Field_1.Owner = Player1.Name
-            Player1.owned_properties.append(Field_1.Name)
-        else:
-            print("You don't want to buy, or you don't have enough money.")
-    else:
-        print("This property is already owned by someone.")
-
-    empty_useless_var = input("If you don't want to do anything, just press Enter.")
+# def Field_1():
+#     global Player1
+#     print("You are on", Field_1.Name)
+#     if Field_1.Owner == "N/A":
+#         player_wants_to_buy = input("Do you want to buy it? (Y/N)")
+#         player_wants_to_buy.upper()
+#         if player_wants_to_buy == "Y" and Player1.money >= Field_1.Price:
+#             Player1.money = Player1.money - Field_1.Price
+#             Field_1.Owner = Player1.Name
+#             Player1.owned_properties.append(Field_1.Name)
+#         else:
+#             print("You don't want to buy, or you don't have enough money.")
+#     else:
+#         print("This property is already owned by someone.")
+#
+#     empty_useless_var = input("If you don't want to do anything, just press Enter.")
 
 ##############################################################################
-#Linear control flow with consecutive functions and dice roll
+# Linear control flow with consecutive functions and dice roll
 # Comment keyboard shortcut in Atom: Ctrl + /
 # def dice_throw():
 #     from random import randint
