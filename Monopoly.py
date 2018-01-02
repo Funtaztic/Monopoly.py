@@ -234,7 +234,7 @@ def dice_throw():
 #it should tell the player that 'you are on square (position).' before and after a roll.
 #Winner: make a list out of players in the game, if only one remains, wins.
 #GIGAFUNCTION test variables:
-P1_name = 'P1'
+P1_name = 'P1' #these will be replaced with Player1.name, etc., respectively.
 P1_money = 200
 P2_name = 'P2'
 P2_money = 200
