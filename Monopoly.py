@@ -119,21 +119,21 @@ active_player = 'P1'
 
 def GIGAFUNCTION():
   global active_player
-  if active_player == 'P1':
+  if active_player == Player1.name:
     print('Your turn,', active_player)
-    active_player = 'P2'
+    active_player = Player2.name
     GIGAFUNCTION()
-  elif active_player == 'P2':
+  elif active_player == Player2.name:
     print('Your turn,', active_player)
-    active_player = 'P3'
+    active_player = Player3.name
     GIGAFUNCTION()
-  elif active_player == 'P3':
+  elif active_player == Player3.name:
     print('Your turn,', active_player)
-    active_player = 'P4'
+    active_player = Player4.name
     GIGAFUNCTION()
-  elif active_player == 'P4':
+  elif active_player == Player4.name:
     print('Your turn,', active_player)
-    active_player = 'P1'
+    active_player = Player1.name
     GIGAFUNCTION()
   else:
     pass
