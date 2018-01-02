@@ -233,15 +233,16 @@ def dice_throw():
 #Position loop:
 #it should tell the player that 'you are on square (position).' before and after a roll.
 #Winner: make a list out of players in the game, if only one remains, wins.
-#GIGAFUNCTION test variables:
-P1_name = 'P1' #these will be replaced with Player1.name, etc., respectively.
-P1_money = 200
-P2_name = 'P2'
-P2_money = 200
-P3_name = 'P3'
-P3_money = 200
-P4_name = 'P4'
-P4_money = 200
+#GIGAFUNCTION test variables: ...maybe this is not needed?
+#Player1.name could be put directly inside of GIGAFUNCTION?
+P1_name  = Player1.name
+P1_money = Player1.money
+P2_name  = Player2.name
+P2_money = Player2.money
+P3_name  = Player3.name
+P3_money = Player3.money
+P4_name  = Player4.name
+P4_money = Player4.money
 #active_player variables: this is the SOLUTION to the player-loop problem!!! :D
 active_player_name = P1_name
 active_player_money = P1_money
