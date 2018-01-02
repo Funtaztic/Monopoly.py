@@ -115,7 +115,31 @@ def dice_throw():
 #it should tell the player that 'you are on square (position).' before and after a roll.
 #Winner: make a list out of players in the game, if only one remains, wins.
 
+active_player = 'P1'
 
+def GIGAFUNCTION():
+  global active_player
+  if active_player == 'P1':
+    print('Your turn,', active_player)
+    active_player = 'P2'
+    GIGAFUNCTION()
+  elif active_player == 'P2':
+    print('Your turn,', active_player)
+    active_player = 'P3'
+    GIGAFUNCTION()
+  elif active_player == 'P3':
+    print('Your turn,', active_player)
+    active_player = 'P4'
+    GIGAFUNCTION()
+  elif active_player == 'P4':
+    print('Your turn,', active_player)
+    active_player = 'P1'
+    GIGAFUNCTION()
+  else:
+    pass
+
+# GIGAFUNCTION()
+# print('end')
 
 ##############################################################################
 ##############################################################################
@@ -127,6 +151,11 @@ class Field(object):
     self.color = color
     self.price = price
     self.owner = owner
+
+# Fold selected lines into 1 line: CTRL + SPACE
+# How to:
+# 'atom-workspace atom-text-editor:not([mini])':
+# 'ctrl-space': 'editor:fold-selection'
 
 Field0_inst_name  = "START"
 Field0_inst_color = "N/A"
