@@ -235,37 +235,40 @@ def dice_throw():
 #Winner: make a list out of players in the game, if only one remains, wins.
 #GIGAFUNCTION test variables: ...maybe this is not needed?
 #Player1.name could be put directly inside of GIGAFUNCTION?
-P1_name  = Player1.name
-P1_money = Player1.money
-P2_name  = Player2.name
-P2_money = Player2.money
-P3_name  = Player3.name
-P3_money = Player3.money
-P4_name  = Player4.name
-P4_money = Player4.money
+# P1_name  = Player1.name
+# P1_money = Player1.money
+# P2_name  = Player2.name
+# P2_money = Player2.money
+# P3_name  = Player3.name
+# P3_money = Player3.money
+# P4_name  = Player4.name
+# P4_money = Player4.money
 #active_player variables: this is the SOLUTION to the player-loop problem!!! :D
-active_player_name = P1_name
-active_player_money = P1_money
-######################################
+active_player_name  = Player1.name
+active_player_money = Player1.money
 
+active_field_name   = Field0.name
+active_field_price  = Field0.price
+######################################
+#THIS WHOLE IF-ELIF branching is of NO USE!!! It can be done by variables assignment!
 def GIGAFUNCTION():
   global active_player_name
   global active_player_money
-  if active_player_name == P1_name:
+  if active_player_name == Player1.name:
     print('Your turn,', active_player_name)
-    active_player_name = P2_name
+    active_player_name   = Player2.name
     GIGAFUNCTION()
-  elif active_player_name == P2_name:
+  elif active_player_name == Player2.name:
     print('Your turn,', active_player_name)
-    active_player_name = P3_name
+    active_player_name   = Player3.name
     GIGAFUNCTION()
-  elif active_player_name == P3_name:
+  elif active_player_name == Player3.name:
     print('Your turn,', active_player_name)
-    active_player_name = P4_name
+    active_player_name   = Player4.name
     GIGAFUNCTION()
-  elif active_player_name == P4_name:
+  elif active_player_name == Player4.name:
     print('Your turn,', active_player_name)
-    active_player_name = P1_name
+    active_player_name   = Player1.name
     GIGAFUNCTION()
   else:
     pass
