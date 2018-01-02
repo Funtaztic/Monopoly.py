@@ -233,26 +233,38 @@ def dice_throw():
 #Position loop:
 #it should tell the player that 'you are on square (position).' before and after a roll.
 #Winner: make a list out of players in the game, if only one remains, wins.
-
-active_player = 'initial_none'
+#GIGAFUNCTION test variables:
+P1_name = 'P1'
+P1_money = 200
+P2_name = 'P2'
+P2_money = 200
+P3_name = 'P3'
+P3_money = 200
+P4_name = 'P4'
+P4_money = 200
+#active_player variables: this is the SOLUTION to the player-loop problem!!! :D
+active_player_name = P1_name
+active_player_money = P1_money
+######################################
 
 def GIGAFUNCTION():
-  global active_player
-  if active_player == Player1.name:
-    print('Your turn,', active_player)
-    active_player = Player2.name
+  global active_player_name
+  global active_player_money
+  if active_player_name == P1_name:
+    print('Your turn,', active_player_name)
+    active_player_name = P2_name
     GIGAFUNCTION()
-  elif active_player == Player2.name:
-    print('Your turn,', active_player)
-    active_player = Player3.name
+  elif active_player_name == P2_name:
+    print('Your turn,', active_player_name)
+    active_player_name = P3_name
     GIGAFUNCTION()
-  elif active_player == Player3.name:
-    print('Your turn,', active_player)
-    active_player = Player4.name
+  elif active_player_name == P3_name:
+    print('Your turn,', active_player_name)
+    active_player_name = P4_name
     GIGAFUNCTION()
-  elif active_player == Player4.name:
-    print('Your turn,', active_player)
-    active_player = Player1.name
+  elif active_player_name == P4_name:
+    print('Your turn,', active_player_name)
+    active_player_name = P1_name
     GIGAFUNCTION()
   else:
     pass
