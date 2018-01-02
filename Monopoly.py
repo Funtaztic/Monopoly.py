@@ -281,11 +281,14 @@ print('end')
 ##############################################################################
 class Field(object):
 
-  def __init__(self, name, color, price, owner):
+  def __init__(self, name, color, price, owner, number, number_of_houses, number_of_villas):
     self.name = name
     self.color = color
     self.price = price
     self.owner = owner
+    self.number = number
+    self.number_of_houses = number_of_houses
+    self.number_of_villas = number_of_villas
 
 # Fold selected lines into 1 line: CTRL + SPACE
 # How to:
@@ -296,11 +299,14 @@ Field0_inst_name  = "START"
 Field0_inst_color = "N/A"
 Field0_inst_price = -200
 Field0_inst_owner = "N/A"
+Field0_inst_number = 0
+Field0_inst_number_of_houses = 0
+Field0_inst_number_of_villas = 0
 
 Field1_inst_name  = "Mediterranean Avenue"
 Field1_inst_color = "Brown"
 Field1_inst_price = 60
-Field1_inst_owner = "N/A"
+Field1_inst_owner = "NONE" # apply to all buyables :D
 
 Field2_inst_name  = "Community Chest"
 Field2_inst_color = "Blue Chest"
@@ -492,7 +498,7 @@ Field39_inst_color = "Blue"
 Field39_inst_price = 400
 Field39_inst_owner = "N/A"
 
-Field0 = Field(Field0_inst_name,  Field0_inst_color,  Field0_inst_price, Field0_inst_owner)
+Field0 = Field(Field0_inst_name,  Field0_inst_color,  Field0_inst_price, Field0_inst_owner, Field0_inst_number, Field0_inst_number_of_houses, Field0_inst_number_of_villas)
 Field1 = Field(Field1_inst_name,  Field1_inst_color,  Field1_inst_price, Field1_inst_owner)
 Field2 = Field(Field2_inst_name,  Field2_inst_color,  Field2_inst_price, Field2_inst_owner)
 Field3 = Field(Field3_inst_name,  Field3_inst_color,  Field3_inst_price, Field3_inst_owner)
@@ -533,7 +539,7 @@ Field37 = Field(Field37_inst_name,  Field37_inst_color,  Field37_inst_price, Fie
 Field38 = Field(Field38_inst_name,  Field38_inst_color,  Field38_inst_price, Field38_inst_owner)
 Field39 = Field(Field39_inst_name,  Field39_inst_color,  Field39_inst_price, Field39_inst_owner)
 
-print(Field0.name, Field0.color, Field0.price, Field0.owner)
+print(Field0.name, Field0.color, Field0.price, Field0.owner, Field0.number, Field0.number_of_houses, Field0.number_of_villas)
 print(Field1.name, Field1.color, Field1.price, Field1.owner)
 print(Field2.name, Field2.color, Field2.price, Field2.owner)
 print(Field3.name, Field3.color, Field3.price, Field3.owner)
@@ -702,6 +708,11 @@ def Field_2():
 #
 # Field_0()
 ##############################################################################
+randomcard:
+
+card1: you win 287329783
+card2: sdaasd
+
 
 ##############################################################################
 
