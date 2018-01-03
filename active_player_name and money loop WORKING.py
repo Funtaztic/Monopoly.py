@@ -84,7 +84,16 @@ def GIGAFIELD():
 
   if active_field_owner == 'N/A':
       player_wants_to_buy = input('Do you want to buy this property?')
-      
+      if player_wants_to_buy == 'Y':
+          pass
+      elif player_wants_to_buy == 'N':
+          GIGAFUNCTION()
+  elif active_field_owner == active_player_name:
+      print('You are the owner of this property.')
+  elif active_field_owner != active_player_name:
+      print('You have to pay a penalty fee.')
+      active_player_money -= penalty * number_of_houses
+      GIGAFUNCTION()
 
 
 
