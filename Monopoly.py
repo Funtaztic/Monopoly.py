@@ -100,14 +100,14 @@ print(Player4.name, Player4.token)
 ##############################################################################
 #This is a dice throw, it gives us a random number from a normal, 6-sided dice.
 #Source: http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
-def dice_throw():
+def dice_roll():
     from random import randint
     result = (randint(1,6))
     return(result)
 
 #It can be used like this, thanks to the return() at the end.
-#print('I will go forward', dice_throw(), 'steps.')
-# This will actually change the position of the player: position = position + dice_throw()
+#print('I will go forward', dice_roll(), 'steps.')
+# This will actually change the position of the player: position = position + dice_roll()
 ##############################################################################
 ##############################################################################
 ##############################################################################
@@ -219,14 +219,14 @@ print(Player4.name, Player4.token)
 ##############################################################################
 #This is a dice throw, it gives us a random number from a normal, 6-sided dice.
 #Source: http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
-def dice_throw():
+def dice_roll():
     from random import randint
     result = (randint(1,6))
     return(result)
 
 #It can be used like this, thanks to the return() at the end.
-#print('I will go forward', dice_throw(), 'steps.')
-# This will actually change the position of the player: position = position + dice_throw()
+#print('I will go forward', dice_roll(), 'steps.')
+# This will actually change the position of the player: position = position + dice_roll()
 ##############################################################################
 ##############################################################################
 ##############################################################################
@@ -607,11 +607,11 @@ print(Field39.name, Field39.color, Field39.price, Field39.owner)
 ##############################################################################
 # Linear control flow with consecutive functions and dice roll
 # Comment keyboard shortcut in Atom: Ctrl + /
-# def dice_throw(): -> this has already been done above. (row 103)
+# def dice_roll(): -> this has already been done above. (row 103)
 #
 def Field_0():
   print('You are on Field 0')
-  dice_result = dice_throw()
+  dice_result = dice_roll()
   # global dice_result
   # print('Throw result:',dice_result)
   # let's make dice_result = 0 just to test the below if statement:
@@ -642,7 +642,7 @@ def Field_0():
 
 def Field_1():
   print('You are on Field 1')
-  dice_result = dice_throw()
+  dice_result = dice_roll()
   # global dice_result
   print('Throw result:',dice_result)
   if dice_result == 0:
@@ -704,7 +704,7 @@ def Field_2():
 #       dice_result = dice_result - 1
 #       Field_1()
 #
-# dice_result = dice_throw()
+# dice_result = dice_roll()
 #
 # Field_0()
 ##############################################################################
@@ -722,8 +722,8 @@ card2: sdaasd
 
 ##############################################################################
 #THE GAME STARTS:
-dice_throw()
-print('The first roll of dice is:',dice_throw())
+dice_roll()
+print('The first roll of dice is:',dice_roll())
 ##############################################################################
 print('Player1 money:' + str(Player1.money))
 
@@ -743,6 +743,6 @@ Player1.position = position_input
 print("Player1's position is " + str(Player1.position))
 print("Please press Enter to roll the dice for Player1")
 position_input = input()
-Player1.position = dice_throw()
+Player1.position = dice_roll()
 print("Player1's position is " + str(Player1.position))
 Field_0()

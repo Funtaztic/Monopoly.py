@@ -16,7 +16,7 @@ active_player_money = P1_money
 active_field_name   = F1_name
 active_field_price  = F1_price
 active_field_owner  = F1_owner
-# function needed to change the player position incremetally with dice_throw()
+# function needed to change the player position incremetally with dice_roll()
 ######################################
 
 def enter():
@@ -44,12 +44,14 @@ def GIGAFUNCTION():
 
     active_player_name  = P2_name
     active_player_money = P2_money
+    P2_active_field_name= P2_position + dice_roll() ?!??!?!?!?!?
     enter()
     GIGAFUNCTION()
   elif active_player_name == P2_name:
     print('Your turn,', active_player_name, active_player_money)
     active_player_name  = P3_name
     active_player_money = P3_money
+    P3_active_field_name= P3_position + dice_roll() ?!??!?!?!?!?
     enter()
     GIGAFUNCTION()
   elif active_player_name == P3_name:
