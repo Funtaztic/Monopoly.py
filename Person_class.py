@@ -14,6 +14,7 @@ class Player(object):
 
   def get(self,new_property):
     self.properties_list.append(new_property)
+    print(self.name, 'have bought', new_property)
 
 #####################################################
 Player1 = Player('John', 100)
@@ -68,16 +69,16 @@ def do_you_have_it(Field_name,Player_props,Player_name):
     print(Player_name, 'you do not have', Field_name)
 
 def do_you_have_it_question_for_everybody():
-    do_you_have_it(Field1.name, Player1.properties_list, Player1.name)
-    do_you_have_it(Field2.name, Player1.properties_list, Player1.name)
-    do_you_have_it(Field3.name, Player1.properties_list, Player1.name)
+    do_you_have_it(Field1.name, Player1.properties_list,Player1.name)
+    do_you_have_it(Field2.name, Player1.properties_list,Player1.name)
+    do_you_have_it(Field3.name, Player1.properties_list,Player1.name)
 
-    do_you_have_it(Field1.name, Player2.properties_list, Player2.name)
-    do_you_have_it(Field2.name, Player2.properties_list, Player2.name)
-    do_you_have_it(Field3.name, Player2.properties_list, Player2.name)
+    do_you_have_it(Field1.name, Player2.properties_list,Player2.name)
+    do_you_have_it(Field2.name, Player2.properties_list,Player2.name)
+    do_you_have_it(Field3.name, Player2.properties_list,Player2.name)
 
-    do_you_have_it(Field1.name, Player3.properties_list, Player3.name)
-    do_you_have_it(Field2.name, Player3.properties_list, Player3.name)
-    do_you_have_it(Field3.name, Player3.properties_list, Player3.name)
+    do_you_have_it(Field1.name, Player3.properties_list,Player3.name)
+    do_you_have_it(Field2.name, Player3.properties_list,Player3.name)
+    do_you_have_it(Field3.name, Player3.properties_list,Player3.name)
 
 do_you_have_it_question_for_everybody()
