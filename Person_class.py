@@ -61,12 +61,23 @@ Player1.intro()
 Player2.intro()
 Player3.intro()
 
-def do_you_have_it(Player_props,Field):
-  if Field in Player_props:
-    print('you have it')
+def do_you_have_it(Field_name,Player_props,Player_name):
+  if Field_name in Player_props:
+    print(Player_name, 'you have', Field_name)
   else:
-    print('you do not have it')
+    print(Player_name, 'you do not have', Field_name)
 
-do_you_have_it(Player1.properties_list,Field1.name)
-do_you_have_it(Player1.properties_list,Field2.name)
-do_you_have_it(Player1.properties_list,Field3.name)
+def do_you_have_it_question_for_everybody():
+    do_you_have_it(Field1.name, Player1.properties_list, Player1.name)
+    do_you_have_it(Field2.name, Player1.properties_list, Player1.name)
+    do_you_have_it(Field3.name, Player1.properties_list, Player1.name)
+
+    do_you_have_it(Field1.name, Player2.properties_list, Player2.name)
+    do_you_have_it(Field2.name, Player2.properties_list, Player2.name)
+    do_you_have_it(Field3.name, Player2.properties_list, Player2.name)
+
+    do_you_have_it(Field1.name, Player3.properties_list, Player3.name)
+    do_you_have_it(Field2.name, Player3.properties_list, Player3.name)
+    do_you_have_it(Field3.name, Player3.properties_list, Player3.name)
+
+do_you_have_it_question_for_everybody()
