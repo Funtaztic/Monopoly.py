@@ -39,7 +39,8 @@ print('Player list:',players)
 #####################################################
 class Field(object):
 
-  def __init__(self,name,price,owner):
+  def __init__(self,number,name,price,owner):
+    self.number = number
     self.name   = name
     self.price  = price
     self.owner  = owner
@@ -52,27 +53,29 @@ class Field(object):
 
   def buy(self,new_owner_name, new_owner_money):
     self.owner = new_owner_name
-#####################################################
-Field1  = Field('Miskolc',    10,   'None')
-Field2  = Field('Debrecen',   15,   'None')
-Field3  = Field('Pest',       20,   'None')
-Field4  = Field('Röcsöge',    5,    'None')
-#####################################################
-dict_for_active_stuff = [1, 2, 3]
 
-def ACTIVATOR_FUNCTION(active_player, active_player_position, active_field):
+#####################################################
+Field0  = Field(0, 'START',       0,    'N/A')
+Field1  = Field(1, '1Miskolc',    10,   'None')
+Field2  = Field(2, '2Debrecen',   15,   'None')
+Field3  = Field(3, '3Pest',       20,   'None')
+Field4  = Field(4, '4Röcsöge',    5,    'None')
+Field5  = Field(5, '5Múcsony',    10,   'None')
+Field6  = Field(6, '6Hajdúhadház',10,   'None')
+#####################################################
+dict_for_active_stuff = [1, 2]
+
+def ACTIVATOR_FUNCTION(active_player, active_player_position):
   # for player in players:
   dict_for_active_stuff[0] = (active_player)
   dict_for_active_stuff[1] = (active_player_position)
-  dict_for_active_stuff[2] = (active_field)
 
 #####################################################
-field_list = [Field1.name, Field2.name, Field3.name]
+field_list = [Field1.name, Field2.name, Field3.name, Field4.name, Field5.name, Field6.name]
 
-def MAIN_MOVE_FUNCTION(player, position, field):
+def MAIN_MOVE_FUNCTION(player, position):
   print('Hi',player)
   print('You are on field',field_list[position])
-  print('Do you want to buy',field)
 
 # which_one = int(input("What month (1-12)? "))
 # months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -120,14 +123,13 @@ def do_you_have_it_question_for_everybody():
 
 do_you_have_it_question_for_everybody()
 
-ACTIVATOR_FUNCTION(Player1.name, Player1.position, Field1.name)
+ACTIVATOR_FUNCTION(Player1.name, Player1.position)
 print(dict_for_active_stuff)
 
 #This does not work perfectly yet, but it is close.
 MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
 print(dict_for_active_stuff)
 Player1.position =+ dice_roll()
-print(dict_for_active_stuff)
-ACTIVATOR_FUNCTION(Player1.name, Player1.position, Field1.name)
+ACTIVATOR_FUNCTION(Player1.name, Player1.position)
 print(dict_for_active_stuff)
 MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
