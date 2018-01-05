@@ -58,20 +58,20 @@ Field2  = Field('Debrecen',   15,   'None')
 Field3  = Field('Pest',       20,   'None')
 Field4  = Field('Röcsöge',    5,    'None')
 #####################################################
-dict_for_active_stuff = []
+dict_for_active_stuff = [1, 2, 3]
 
 def ACTIVATOR_FUNCTION(active_player, active_player_position, active_field):
   # for player in players:
-  dict_for_active_stuff.append(active_player)
-  dict_for_active_stuff.append(active_player_position)
-  dict_for_active_stuff.append(active_field)
+  dict_for_active_stuff[0] = (active_player)
+  dict_for_active_stuff[1] = (active_player_position)
+  dict_for_active_stuff[2] = (active_field)
 
 #####################################################
 field_list = [Field1.name, Field2.name, Field3.name]
 
 def MAIN_MOVE_FUNCTION(player, position, field):
   print('Hi',player)
-  print('You are on field',field_list[position-1])
+  print('You are on field',field_list[position])
   print('Do you want to buy',field)
 
 # which_one = int(input("What month (1-12)? "))
@@ -124,4 +124,10 @@ ACTIVATOR_FUNCTION(Player1.name, Player1.position, Field1.name)
 print(dict_for_active_stuff)
 
 #This does not work perfectly yet, but it is close.
+MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
+print(dict_for_active_stuff)
+Player1.position =+ dice_roll()
+print(dict_for_active_stuff)
+ACTIVATOR_FUNCTION(Player1.name, Player1.position, Field1.name)
+print(dict_for_active_stuff)
 MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
