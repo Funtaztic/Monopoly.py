@@ -1,11 +1,10 @@
 #####################################################
 class Person(object):
 
-  properties_list = []
-
   def __init__(self,name,money):
     self.name       = name
     self.money      = money
+    self.properties_list = []
 
   def intro(self):
     print('Player name:\t\t', self.name)
@@ -30,7 +29,7 @@ class Field(object):
 
   def intro(self):
     print('**Property name\t\t',self.name)
-    print('**Property price\t', self.price)    
+    print('**Property price\t', self.price)
     print('**Property owner\t', self.owner)
     print('******************************************')
 
@@ -38,27 +37,24 @@ class Field(object):
     self.owner = new_owner_name
 
 #####################################################
-Field1  = Field('Miskolc',10,'None')
-Field2  = Field('Debrecen',15,'None')
-Field3  = Field('Pest',20,'None')
+Field1  = Field('Miskolc',    10,   'None')
+Field2  = Field('Debrecen',   15,   'None')
+Field3  = Field('Pest',       20,   'None')
+#####################################################
+#####################################################
 #####################################################
 Person1.intro()
-# Person2.intro()
-# Person3.intro()
+Person2.intro()
+Person3.intro()
 
-Field1.intro()
+# Field1.intro()
 # Field2.intro()
 # Field3.intro()
 #####################################################
-Field1.buy(Person1.name, Person1.money)
 Person1.get(Field1.name)
-# Field2.buy(Person2.name,Person2.money)
-# Field3.buy(Person3.name,Person3.money)
+Person2.get(Field2.name)
+Person3.get(Field3.name)
 #####################################################
 Person1.intro()
-# Person2.intro()
-# Person3.intro()
-
-Field1.intro()
-# Field2.intro()
-# Field3.intro()
+Person2.intro()
+Person3.intro()
