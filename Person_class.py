@@ -1,5 +1,5 @@
 #####################################################
-class Person(object):
+class Player(object):
 
   def __init__(self,name,money):
     self.name       = name
@@ -16,9 +16,9 @@ class Person(object):
     self.properties_list.append(new_property)
 
 #####################################################
-Person1 = Person('John', 100)
-Person2 = Person('James',100)
-Person3 = Person('Jeno', 100)
+Player1 = Player('John', 100)
+Player2 = Player('James',100)
+Player3 = Player('Jeno', 100)
 #####################################################
 class Field(object):
 
@@ -40,21 +40,33 @@ class Field(object):
 Field1  = Field('Miskolc',    10,   'None')
 Field2  = Field('Debrecen',   15,   'None')
 Field3  = Field('Pest',       20,   'None')
+Field4  = Field('Röcsöge',    5,    'None')
 #####################################################
 #####################################################
 #####################################################
-Person1.intro()
-Person2.intro()
-Person3.intro()
+Player1.intro()
+Player2.intro()
+Player3.intro()
 
 # Field1.intro()
 # Field2.intro()
 # Field3.intro()
 #####################################################
-Person1.get(Field1.name)
-Person2.get(Field2.name)
-Person3.get(Field3.name)
+Player1.get(Field1.name)
+Player2.get(Field2.name)
+Player3.get(Field3.name)
+Player3.get(Field4.name)
 #####################################################
-Person1.intro()
-Person2.intro()
-Person3.intro()
+Player1.intro()
+Player2.intro()
+Player3.intro()
+
+def do_you_have_it(Player_props,Field):
+  if Field in Player_props:
+    print('you have it')
+  else:
+    print('you do not have it')
+
+do_you_have_it(Player1.properties_list,Field1.name)
+do_you_have_it(Player1.properties_list,Field2.name)
+do_you_have_it(Player1.properties_list,Field3.name)
