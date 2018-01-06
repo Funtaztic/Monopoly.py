@@ -157,7 +157,13 @@ Field39.name
 def MAIN_MOVE_FUNCTION(player, position):
   print('Hi',player)
   print('You are on field',field_list[position])
-
+  print('Press Enter to roll the dice:')
+  enter_to_roll_the_dice = input()
+  dice_result = dice_roll()
+  print('******************************************')
+  print(player, 'rolled:' ,dice_result)
+  Player1.position = Player1.position + dice_result
+  print('******************************************')
 
 # which_one = int(input("What month (1-12)? "))
 # months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -211,59 +217,17 @@ print(dict_for_active_stuff)
 #This does not work perfectly yet, but it is close.
 MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
 # print(dict_for_active_stuff)
-dice_result = dice_roll()
-print('You rolled:' ,dice_result)
-Player1.position = Player1.position + dice_result
 ACTIVATOR_FUNCTION(Player1.name, Player1.position)
 # print(dict_for_active_stuff)
-# MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
 
 #This does not work perfectly yet, but it is close.
 MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
 # print(dict_for_active_stuff)
-dice_result = dice_roll()
-print('You rolled:' ,dice_result)
-Player1.position = Player1.position + dice_result
 ACTIVATOR_FUNCTION(Player1.name, Player1.position)
 # print(dict_for_active_stuff)
-# MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
 
 #This does not work perfectly yet, but it is close.
 MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
 # print(dict_for_active_stuff)
-dice_result = dice_roll()
-print('You rolled:' ,dice_result)
-Player1.position = Player1.position + dice_result
 ACTIVATOR_FUNCTION(Player1.name, Player1.position)
 # print(dict_for_active_stuff)
-# MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-
-#This does not work perfectly yet, but it is close.
-MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
-dice_result = dice_roll()
-print('You rolled:' ,dice_result)
-Player1.position = Player1.position + dice_result
-ACTIVATOR_FUNCTION(Player1.name, Player1.position)
-# print(dict_for_active_stuff)
-# MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-
-#This does not work perfectly yet, but it is close.
-MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
-dice_result = dice_roll()
-print('You rolled:' ,dice_result)
-Player1.position = Player1.position + dice_result
-ACTIVATOR_FUNCTION(Player1.name, Player1.position)
-# print(dict_for_active_stuff)
-# MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-
-#This does not work perfectly yet, but it is close.
-MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
-dice_result = dice_roll()
-print('You rolled:' ,dice_result)
-Player1.position = Player1.position + dice_result
-ACTIVATOR_FUNCTION(Player1.name, Player1.position)
-# print(dict_for_active_stuff)
-# MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
