@@ -30,10 +30,20 @@ class Player(object):
 
 #####################################################
 #The Player1_input_name stuff can be copied from original.
+# Player1_input_name = input('Player1, please enter your Name.')
+# Player2_input_name = input('Player2, please enter your Name.')
+# Player3_input_name = input('Player3, please enter your Name.')
+# Player4_input_name = input('Player4, please enter your Name.')
+# Player1 = Player(Player1_input_name, 100, 0)
+# Player2 = Player(Player2_input_name, 100, 0)
+# Player3 = Player(Player3_input_name, 100, 0)
+# Player4 = Player(Player4_input_name, 100, 0)
+
 Player1 = Player('Annabel', 100, 0)
 Player2 = Player('Bernard', 100, 0)
 Player3 = Player('Clara',   100, 0)
 Player4 = Player('Daniel',  100, 0)
+
 players = []
 players.append(Player1.name)
 players.append(Player2.name)
@@ -104,13 +114,17 @@ Field39 = Field(39, 'Broadwalk',               400,  'None', 'Property')
 
 
 #####################################################
-dict_for_active_stuff = [1, 2, 3]
+dict_for_active_stuff = [0, 1, 2, 3, 4, 5]
 
-def ACTIVATOR_FUNCTION(active_player, active_player_position, active_field_owner):
+def ACTIVATOR_FUNCTION(player_name,player_position,player_properties_list,player_money,field_owner,field_price):
+
   # for player in players:
-  dict_for_active_stuff[0] = (active_player)
-  dict_for_active_stuff[1] = (active_player_position)
-  dict_for_active_stuff[2] = (active_field_owner)
+    dict_for_active_stuff[0] = (player_name)
+    dict_for_active_stuff[1] = (player_position)
+    dict_for_active_stuff[2] = (player_properties_list)
+    dict_for_active_stuff[3] = (player_money)
+    dict_for_active_stuff[4] = (field_owner)
+    dict_for_active_stuff[5] = (field_price)
 
 #####################################################
 def field_name_list_maker():
@@ -159,6 +173,52 @@ def field_name_list_maker():
     ]
 field_name_list_maker()
 
+def field_price_list_maker():
+    global field_price_list
+    field_price_list = [
+    Field0.price,
+    Field1.price,
+    Field2.price,
+    Field3.price,
+    Field4.price,
+    Field5.price,
+    Field6.price,
+    Field7.price,
+    Field8.price,
+    Field9.price,
+    Field10.price,
+    Field11.price,
+    Field12.price,
+    Field13.price,
+    Field14.price,
+    Field15.price,
+    Field16.price,
+    Field17.price,
+    Field18.price,
+    Field19.price,
+    Field20.price,
+    Field21.price,
+    Field22.price,
+    Field23.price,
+    Field24.price,
+    Field25.price,
+    Field26.price,
+    Field27.price,
+    Field28.price,
+    Field29.price,
+    Field30.price,
+    Field31.price,
+    Field32.price,
+    Field33.price,
+    Field34.price,
+    Field35.price,
+    Field36.price,
+    Field37.price,
+    Field38.price,
+    Field39.price
+    ]
+field_price_list_maker()
+
 def field_owner_list_maker():
     global field_owner_list
     field_owner_list = [
@@ -205,8 +265,7 @@ def field_owner_list_maker():
     ]
 field_owner_list_maker()
 
-
-def MAIN_MOVE_FUNCTION(player, position, owner):
+def MAIN_MOVE_FUNCTION(player, position, properties_list, money, owner, price):
   print('Hi',player)
   print('You are on field',field_name_list[position])
   print('Press Enter to roll the dice:')
@@ -218,10 +277,28 @@ def MAIN_MOVE_FUNCTION(player, position, owner):
   print('Now you are on field',field_name_list[position])
   print('******************************************')
   #BUY IF/ELSE
-  if  field_owner_list[position] == 'N/A':
-      print('This property has no owner yet.')
+  answer = '0'
+  if  field_owner_list[position] == 'None': #if field has no ownder yet
+      while answer != 'Y' or answer != 'N': #while player does not give answer
+          print('This property has no owner yet.')
+          print('You can buy this property:', field_name_list[position])
+          answer = input('Do you want to buy it? (Y/N)').upper()
+          if answer == 'Y' and money >= field_price_list[position]:
+              print('Your answer was YES')
+              print('and you have enough money')
+              money -= price
+              owner = player
+              player.properties_list.append(field_name_list[position])
+              Player1.intro()
+              print(owner)
+          elif answer == 'N':
+              print('Your answer was NO')
+              pass
+          else:
+              print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
+
   else:
-      print('You can buy this')
+      print('This property belongs to', field_owner_list[position])
 
 
   # class Field(object):
@@ -229,8 +306,6 @@ def MAIN_MOVE_FUNCTION(player, position, owner):
   # class Player(object):
   #   def __init__(self,name,money,position):
   #
-
-
 
 # which_one = int(input("What month (1-12)? "))
 # months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -280,7 +355,7 @@ do_you_have_it_question_for_everybody()
 
 
 
-ACTIVATOR_FUNCTION(Player1.name, Player1.position, field_owner_list[Player1.position])
+ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position])
 print(dict_for_active_stuff)
 
 #This does not work perfectly yet, but it is close.
