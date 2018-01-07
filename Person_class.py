@@ -60,6 +60,7 @@ class Field(object):
     self.owner = new_owner_name
 
 #####################################################
+
 Field0  = Field(0,  'START',                   0,    'None', 'None')
 Field1  = Field(1,  'Mediterranean Avenue',    60,   'None', 'Property')
 Field2  = Field(2,  'Community Chest',         0,    'None', 'Chest')
@@ -103,67 +104,133 @@ Field39 = Field(39, 'Broadwalk',               400,  'None', 'Property')
 
 
 #####################################################
-dict_for_active_stuff = [1, 2]
+dict_for_active_stuff = [1, 2, 3]
 
-def ACTIVATOR_FUNCTION(active_player, active_player_position):
+def ACTIVATOR_FUNCTION(active_player, active_player_position, active_field_owner):
   # for player in players:
   dict_for_active_stuff[0] = (active_player)
   dict_for_active_stuff[1] = (active_player_position)
+  dict_for_active_stuff[2] = (active_field_owner)
 
 #####################################################
-field_list = [
-Field0.name,
-Field1.name,
-Field2.name,
-Field3.name,
-Field4.name,
-Field5.name,
-Field6.name,
-Field7.name,
-Field8.name,
-Field9.name,
-Field10.name,
-Field11.name,
-Field12.name,
-Field13.name,
-Field14.name,
-Field15.name,
-Field16.name,
-Field17.name,
-Field18.name,
-Field19.name,
-Field20.name,
-Field21.name,
-Field22.name,
-Field23.name,
-Field24.name,
-Field25.name,
-Field26.name,
-Field27.name,
-Field28.name,
-Field29.name,
-Field30.name,
-Field31.name,
-Field32.name,
-Field33.name,
-Field34.name,
-Field35.name,
-Field36.name,
-Field37.name,
-Field38.name,
-Field39.name
-]
+def field_name_list_maker():
+    global field_name_list
+    field_name_list = [
+    Field0.name,
+    Field1.name,
+    Field2.name,
+    Field3.name,
+    Field4.name,
+    Field5.name,
+    Field6.name,
+    Field7.name,
+    Field8.name,
+    Field9.name,
+    Field10.name,
+    Field11.name,
+    Field12.name,
+    Field13.name,
+    Field14.name,
+    Field15.name,
+    Field16.name,
+    Field17.name,
+    Field18.name,
+    Field19.name,
+    Field20.name,
+    Field21.name,
+    Field22.name,
+    Field23.name,
+    Field24.name,
+    Field25.name,
+    Field26.name,
+    Field27.name,
+    Field28.name,
+    Field29.name,
+    Field30.name,
+    Field31.name,
+    Field32.name,
+    Field33.name,
+    Field34.name,
+    Field35.name,
+    Field36.name,
+    Field37.name,
+    Field38.name,
+    Field39.name
+    ]
+field_name_list_maker()
 
-def MAIN_MOVE_FUNCTION(player, position):
+def field_owner_list_maker():
+    global field_owner_list
+    field_owner_list = [
+    Field0.owner,
+    Field1.owner,
+    Field2.owner,
+    Field3.owner,
+    Field4.owner,
+    Field5.owner,
+    Field6.owner,
+    Field7.owner,
+    Field8.owner,
+    Field9.owner,
+    Field10.owner,
+    Field11.owner,
+    Field12.owner,
+    Field13.owner,
+    Field14.owner,
+    Field15.owner,
+    Field16.owner,
+    Field17.owner,
+    Field18.owner,
+    Field19.owner,
+    Field20.owner,
+    Field21.owner,
+    Field22.owner,
+    Field23.owner,
+    Field24.owner,
+    Field25.owner,
+    Field26.owner,
+    Field27.owner,
+    Field28.owner,
+    Field29.owner,
+    Field30.owner,
+    Field31.owner,
+    Field32.owner,
+    Field33.owner,
+    Field34.owner,
+    Field35.owner,
+    Field36.owner,
+    Field37.owner,
+    Field38.owner,
+    Field39.owner
+    ]
+field_owner_list_maker()
+
+
+def MAIN_MOVE_FUNCTION(player, position, owner):
   print('Hi',player)
-  print('You are on field',field_list[position])
+  print('You are on field',field_name_list[position])
   print('Press Enter to roll the dice:')
   enter_to_roll_the_dice = input()
   dice_result = dice_roll()
   print('******************************************')
   print(player, 'rolled:' ,dice_result)
   Player1.position = Player1.position + dice_result
+  print('Now you are on field',field_name_list[position])
   print('******************************************')
+  #BUY IF/ELSE
+  if  field_owner_list[position] == 'N/A':
+      print('This property has no owner yet.')
+  else:
+      print('You can buy this')
+
+
+  # class Field(object):
+  #   def __init__(self,number,name,price,owner,category):
+  # class Player(object):
+  #   def __init__(self,name,money,position):
+  #
+
+
 
 # which_one = int(input("What month (1-12)? "))
 # months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -211,23 +278,11 @@ def do_you_have_it_question_for_everybody():
 
 do_you_have_it_question_for_everybody()
 
-ACTIVATOR_FUNCTION(Player1.name, Player1.position)
+
+
+ACTIVATOR_FUNCTION(Player1.name, Player1.position, field_owner_list[Player1.position])
 print(dict_for_active_stuff)
 
 #This does not work perfectly yet, but it is close.
 MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
-ACTIVATOR_FUNCTION(Player1.name, Player1.position)
-# print(dict_for_active_stuff)
-
-#This does not work perfectly yet, but it is close.
-MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
-ACTIVATOR_FUNCTION(Player1.name, Player1.position)
-# print(dict_for_active_stuff)
-
-#This does not work perfectly yet, but it is close.
-MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
-ACTIVATOR_FUNCTION(Player1.name, Player1.position)
-# print(dict_for_active_stuff)
+print(dict_for_active_stuff)
