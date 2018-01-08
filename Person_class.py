@@ -1,6 +1,10 @@
 #####################################################
 import math
 
+#You need 'global' before accessing these in any way.
+houses_owned_by_the_bank = 32
+hotels_owned_by_the_bank = 12
+
 def dice_roll():
     from random import randint
     result = (randint(1,6))
@@ -71,46 +75,46 @@ class Field(object):
 
 #####################################################
 
-Field0  = Field(0,  'START',                   0,    'None', 'None')
-Field1  = Field(1,  'Mediterranean Avenue',    60,   'None', 'Property')
-Field2  = Field(2,  'Community Chest',         0,    'None', 'Chest')
-Field3  = Field(3,  'Baltic Avenue',           60,   'None', 'Property')
-Field4  = Field(4,  'Income Tax',              200,  'None', 'Penalty')
-Field5  = Field(5,  'Reading Railroad',        200,  'None', 'Property')
-Field6  = Field(6,  'Oriental Avenue',         100,  'None', 'Property')
-Field7  = Field(7,  'Chance',                  0,    'None', 'Chance')
-Field8  = Field(8,  'Vermont Avenue',          100,  'None', 'Property')
-Field9  = Field(9,  'Connecticut Avenue',      120,  'None', 'Property')
-Field10 = Field(10, 'Just Visiting (Jail)',    0,    'None', 'None')
-Field11 = Field(11, 'St. Charles Place',       140,  'None', 'Property')
-Field12 = Field(12, 'Electric Company',        150,  'None', 'Property')
-Field13 = Field(13, 'States Avenue',           140,  'None', 'Property')
-Field14 = Field(14, 'Virginia Avenue',         160,  'None', 'Property')
-Field15 = Field(15, 'Pennsylvania Railroad',   200,  'None', 'Property')
-Field16 = Field(16, 'St. James Place',         180,  'None', 'Property')
-Field17 = Field(17, 'Community Chest',         0,    'None', 'Chest')
-Field18 = Field(18, 'Tennessee Avenue',        180,  'None', 'Property')
-Field19 = Field(19, 'New York Avenue',         200,  'None', 'Property')
-Field20 = Field(20, 'Free Parking',            0,    'None', 'None')
-Field21 = Field(21, 'Kentucky Avenue',         220,  'None', 'Property')
-Field22 = Field(22, 'Chance',                  0,    'None', 'Chance')
-Field23 = Field(23, 'Indiana Avenue',          220,  'None', 'Property')
-Field24 = Field(24, 'Illinois Avenue',         240,  'None', 'Property')
-Field25 = Field(25, 'B. & O. Railroad',        200,  'None', 'Property')
-Field26 = Field(26, 'Atlantic Avenue',         260,  'None', 'Property')
-Field27 = Field(27, 'Ventnor Avenue',          260,  'None', 'Property')
-Field28 = Field(28, 'Water Works',             150,  'None', 'Property')
-Field29 = Field(29, 'Marvin Gardens',          280,  'None', 'Property')
-Field30 = Field(30, 'Go To Jail',              0,    'None', 'Penalty')
-Field31 = Field(31, 'Pacific Avenue',          300,  'None', 'Property')
-Field32 = Field(32, 'North Carolina Avenue',   300,  'None', 'Property')
-Field33 = Field(33, 'Community Chest',         0,    'None', 'Chest')
-Field34 = Field(34, 'Pennsylvania Avenue',     320,  'None', 'Property')
-Field35 = Field(35, 'Short Line',              200,  'None', 'Property')
-Field36 = Field(36, 'Chance',                  0,    'None', 'Chance')
-Field37 = Field(37, 'Park Place',              350,  'None', 'Property')
-Field38 = Field(38, 'Luxury Tax',              100,  'None', 'Penalty')
-Field39 = Field(39, 'Broadwalk',               400,  'None', 'Property')
+Field0  = Field(0,  'START',                   10,    'Bank', 'None') #This should not be buyable. Set price back to 0, or none.
+Field1  = Field(1,  'Mediterranean Avenue',    60,   'Bank', 'Property')
+Field2  = Field(2,  'Community Chest',         0,    'Bank', 'Chest')
+Field3  = Field(3,  'Baltic Avenue',           60,   'Bank', 'Property')
+Field4  = Field(4,  'Income Tax',              200,  'Bank', 'Penalty')
+Field5  = Field(5,  'Reading Railroad',        200,  'Bank', 'Property')
+Field6  = Field(6,  'Oriental Avenue',         100,  'Bank', 'Property')
+Field7  = Field(7,  'Chance',                  0,    'Bank', 'Chance')
+Field8  = Field(8,  'Vermont Avenue',          100,  'Bank', 'Property')
+Field9  = Field(9,  'Connecticut Avenue',      120,  'Bank', 'Property')
+Field10 = Field(10, 'Just Visiting (Jail)',    0,    'Bank', 'None')
+Field11 = Field(11, 'St. Charles Place',       140,  'Bank', 'Property')
+Field12 = Field(12, 'Electric Company',        150,  'Bank', 'Property')
+Field13 = Field(13, 'States Avenue',           140,  'Bank', 'Property')
+Field14 = Field(14, 'Virginia Avenue',         160,  'Bank', 'Property')
+Field15 = Field(15, 'Pennsylvania Railroad',   200,  'Bank', 'Property')
+Field16 = Field(16, 'St. James Place',         180,  'Bank', 'Property')
+Field17 = Field(17, 'Community Chest',         0,    'Bank', 'Chest')
+Field18 = Field(18, 'Tennessee Avenue',        180,  'Bank', 'Property')
+Field19 = Field(19, 'New York Avenue',         200,  'Bank', 'Property')
+Field20 = Field(20, 'Free Parking',            0,    'Bank', 'None')
+Field21 = Field(21, 'Kentucky Avenue',         220,  'Bank', 'Property')
+Field22 = Field(22, 'Chance',                  0,    'Bank', 'Chance')
+Field23 = Field(23, 'Indiana Avenue',          220,  'Bank', 'Property')
+Field24 = Field(24, 'Illinois Avenue',         240,  'Bank', 'Property')
+Field25 = Field(25, 'B. & O. Railroad',        200,  'Bank', 'Property')
+Field26 = Field(26, 'Atlantic Avenue',         260,  'Bank', 'Property')
+Field27 = Field(27, 'Ventnor Avenue',          260,  'Bank', 'Property')
+Field28 = Field(28, 'Water Works',             150,  'Bank', 'Property')
+Field29 = Field(29, 'Marvin Gardens',          280,  'Bank', 'Property')
+Field30 = Field(30, 'Go To Jail',              0,    'Bank', 'Penalty')
+Field31 = Field(31, 'Pacific Avenue',          300,  'Bank', 'Property')
+Field32 = Field(32, 'North Carolina Avenue',   300,  'Bank', 'Property')
+Field33 = Field(33, 'Community Chest',         0,    'Bank', 'Chest')
+Field34 = Field(34, 'Pennsylvania Avenue',     320,  'Bank', 'Property')
+Field35 = Field(35, 'Short Line',              200,  'Bank', 'Property')
+Field36 = Field(36, 'Chance',                  0,    'Bank', 'Chance')
+Field37 = Field(37, 'Park Place',              350,  'Bank', 'Property')
+Field38 = Field(38, 'Luxury Tax',              100,  'Bank', 'Penalty')
+Field39 = Field(39, 'Broadwalk',               400,  'Bank', 'Property')
 
 
 #####################################################
@@ -278,7 +282,7 @@ def MAIN_MOVE_FUNCTION(player, position, properties_list, money, owner, price):
   print('******************************************')
   #BUY IF/ELSE
   answer = '0'
-  if  field_owner_list[position] == 'None': #if field has no ownder yet
+  if  field_owner_list[position] == 'Bank': #if field has no ownder yet
       while answer != 'Y' or answer != 'N': #while player does not give answer
           print('This property has no owner yet.')
           print('You can buy this property:', field_name_list[position])
@@ -286,9 +290,18 @@ def MAIN_MOVE_FUNCTION(player, position, properties_list, money, owner, price):
           if answer == 'Y' and money >= field_price_list[position]:
               print('Your answer was YES')
               print('and you have enough money')
-              money -= price
+              print('player money:', money)
+              print('player money:', money)
+              money = money - price
               owner = player
-              player.properties_list.append(field_name_list[position])
+              # field_being_got = field_name_list[position]
+              # list_being_got_into = player.properties_list
+              #
+              # list_being_got_into.append(field_being_got)
+              #
+              # field_name_list[position] = field_being_got
+              # player.properties_list = list_being_got_into
+              properties_list.append(field_name_list[position])
               Player1.intro()
               print(owner)
           elif answer == 'N':
@@ -301,18 +314,6 @@ def MAIN_MOVE_FUNCTION(player, position, properties_list, money, owner, price):
       print('This property belongs to', field_owner_list[position])
 
 
-  # class Field(object):
-  #   def __init__(self,number,name,price,owner,category):
-  # class Player(object):
-  #   def __init__(self,name,money,position):
-  #
-
-# which_one = int(input("What month (1-12)? "))
-# months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
-#           'August', 'September', 'October', 'November', 'December']
-
-# if 1 <= which_one <= 12:
-#     print("The month is", months[which_one - 1])
 
 #####################################################
 Player1.intro()
