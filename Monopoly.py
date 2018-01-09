@@ -1,13 +1,6 @@
-##############################################################################
-####This should be the digital version of the classic boardgame: Monopoly.####
-##############################################################################
-#Make it for 1 player first, or start development with multiple players?
-
-##############################################################################
+#####################################################
 import math
-
-ActivePlayer = 'None'
-##############################################################################
+#####################################################
 #Make a wait() function with a configurable parameter, like: wait(1) or wait(2).
 #Source: https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/
 def wait(sec):
@@ -22,450 +15,368 @@ def test_wait():
     wait(3)
 
 #test_wait()
+#####################################################
+#You need 'global' before accessing these in any way.
+houses_owned_by_the_bank = 32
+hotels_owned_by_the_bank = 12
 
-##############################################################################
-
-def basic_money_function():
-    global MONEY
-    print(you have , MONEY, money)
-    print(What do you want to do with the money?)
-    print(1. Give)
-    print(2. Take)
-
-    answer = input().lower()
-    if answer == '1':
-        MONEY -= 100
-        answer = 'none'
-        basic_money_function()
-    elif answer == '2':
-        MONEY += 100
-        answer = 'none'
-        basic_money_function()
-    else:
-        print(Okay, no transactions then.)
-        #this function call is not needed in the long run, can be deleted.
-        #it may be replaced with a return?
-        basic_money_function()
-
-#basic_money_function()
-
-##############################################################################
-
-#This class will create the players, instead of player_registration_v1:
-#source: https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
-class Player(object):
-  money = 100
-  position = 0
-  in_jail = False
-  owned_properties = []
-
-  def __init__(self, name, token):
-    self.name = name
-    self.token = token
-
-#Let's make a player name maker, that uses user input to make class insts.
-
-Player1_input_name = input(Player1, Please enter your name:)
-Player1_input_token = input(Player1, Please select a token:)
-
-Player2_input_name = input(Player2, Please enter your name:)
-Player2_input_token = input(Player2, Please select a token:)
-
-Player3_input_name = input(Player3, Please enter your name:)
-Player3_input_token = input(Player3, Please select a token:)
-
-Player4_input_name = input(Player4, Please enter your name:)
-Player4_input_token = input(Player4, Please select a token:)
-
-Player1 = Player(Player1_input_name,Player1_input_token)
-Player2 = Player(Player2_input_name,Player2_input_token)
-Player3 = Player(Player3_input_name,Player3_input_token)
-Player4 = Player(Player4_input_name,Player4_input_token)
-
-print(Player1.name, Player1.token)
-print(Player2.name, Player2.token)
-print(Player3.name, Player3.token)
-print(Player4.name, Player4.token)
-
-
-#remove last item from the dict, until number_of_players number of players remain.
-#Source: https://www.tutorialspoint.com/python3/python_lists.htm
-
-#racecar
-#iron
-#top_hat
-
-#-> basic_money_function is not needed anymore?/needs to be modified?
-
-##############################################################################
-#This is a dice throw, it gives us a random number from a normal, 6-sided dice.
-#Source: http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
 def dice_roll():
     from random import randint
     result = (randint(1,6))
     return(result)
 
-#It can be used like this, thanks to the return() at the end.
-#print('I will go forward', dice_roll(), 'steps.')
-# This will actually change the position of the player: position = position + dice_roll()
-##############################################################################
-##############################################################################
-##############################################################################
-#Position loop:
-#it should tell the player that 'you are on square (position).' before and after a roll.
-#Winner: make a list out of players in the game, if only one remains, wins.
-
-active_player = 'initial_none'
-
-##############################################################################
-####This should be the digital version of the classic boardgame: Monopoly.####
-##############################################################################
-#Make it for 1 player first, or start development with multiple players?
-
-##############################################################################
-import math
-
-ActivePlayer = 'None'
-##############################################################################
-#Make a wait() function with a configurable parameter, like: wait(1) or wait(2).
-#Source: https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/
-def wait(sec):
-    time.sleep(sec)
-
-def test_wait():
-    print('1')
-    wait(1)
-    print('2')
-    wait(2)
-    print('3')
-    wait(3)
-
-#test_wait()
-
-##############################################################################
-
-def basic_money_function():
-    global MONEY
-    print(you have , MONEY, money)
-    print(What do you want to do with the money?)
-    print(1. Give)
-    print(2. Take)
-
-    answer = input().lower()
-    if answer == '1':
-        MONEY -= 100
-        answer = 'none'
-        basic_money_function()
-    elif answer == '2':
-        MONEY += 100
-        answer = 'none'
-        basic_money_function()
-    else:
-        print(Okay, no transactions then.)
-        #this function call is not needed in the long run, can be deleted.
-        #it may be replaced with a return?
-        basic_money_function()
-
-#basic_money_function()
-
-##############################################################################
-
-#This class will create the players, instead of player_registration_v1:
-#source: https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
 class Player(object):
-  money = 100
-  position = 0
-  in_jail = False
-  owned_properties = []
 
-  def __init__(self, name, token):
-    self.name = name
-    self.token = token
+  def __init__(self,name,money,position):
+    self.name               = name
+    self.money              = money
+    self.position           = position
+    self.properties_list    = []
 
-#Let's make a player name maker, that uses user input to make class insts.
+  def intro(self):
+    print('Player name:\t\t',     self.name)
+    print('Player money:\t\t',    self.money)
+    print('Player position:\t',   self.position)
+    print('Player properties:\t', self.properties_list)
+    print('******************************************')
 
-Player1_input_name = input(Player1, Please enter your name:)
-Player1_input_token = input(Player1, Please select a token:)
+  def get(self,new_property):
+    self.properties_list.append(new_property)
+    print(self.name, '\thave bought\t', new_property)
+    print('******************************************')
 
-Player2_input_name = input(Player2, Please enter your name:)
-Player2_input_token = input(Player2, Please select a token:)
+  # def roll_the_dice(self,position):
 
-Player3_input_name = input(Player3, Please enter your name:)
-Player3_input_token = input(Player3, Please select a token:)
+#####################################################
+#The Player1_input_name stuff can be copied from original.
+# Player1_input_name = input('Player1, please enter your Name.')
+# Player2_input_name = input('Player2, please enter your Name.')
+# Player3_input_name = input('Player3, please enter your Name.')
+# Player4_input_name = input('Player4, please enter your Name.')
+# Player1 = Player(Player1_input_name, 100, 0)
+# Player2 = Player(Player2_input_name, 100, 0)
+# Player3 = Player(Player3_input_name, 100, 0)
+# Player4 = Player(Player4_input_name, 100, 0)
 
-Player4_input_name = input(Player4, Please enter your name:)
-Player4_input_token = input(Player4, Please select a token:)
+Player1 = Player('Annabel', 100, 0)
+Player2 = Player('Bernard', 100, 0)
+Player3 = Player('Clara',   100, 0)
+Player4 = Player('Daniel',  100, 0)
 
-Player1 = Player(Player1_input_name,Player1_input_token)
-Player2 = Player(Player2_input_name,Player2_input_token)
-Player3 = Player(Player3_input_name,Player3_input_token)
-Player4 = Player(Player4_input_name,Player4_input_token)
-
-print(Player1.name, Player1.token)
-print(Player2.name, Player2.token)
-print(Player3.name, Player3.token)
-print(Player4.name, Player4.token)
-
-
-#remove last item from the dict, until number_of_players number of players remain.
-#Source: https://www.tutorialspoint.com/python3/python_lists.htm
-
-#racecar
-#iron
-#top_hat
-
-#-> basic_money_function is not needed anymore?/needs to be modified?
-
-##############################################################################
-#This is a dice throw, it gives us a random number from a normal, 6-sided dice.
-#Source: http://www.pythonforbeginners.com/random/how-to-use-the-random-module-in-python
-def dice_roll():
-    from random import randint
-    result = (randint(1,6))
-    return(result)
-
-#It can be used like this, thanks to the return() at the end.
-#print('I will go forward', dice_roll(), 'steps.')
-# This will actually change the position of the player: position = position + dice_roll()
-##############################################################################
-##############################################################################
-##############################################################################
-#Position loop:
-#it should tell the player that 'you are on square (position).' before and after a roll.
-#Winner: make a list out of players in the game, if only one remains, wins.
-#GIGAFUNCTION test variables: ...maybe this is not needed?
-#Player1.name could be put directly inside of GIGAFUNCTION?
-# P1_name  = Player1.name
-# P1_money = Player1.money
-# P2_name  = Player2.name
-# P2_money = Player2.money
-# P3_name  = Player3.name
-# P3_money = Player3.money
-# P4_name  = Player4.name
-# P4_money = Player4.money
-#active_player variables: this is the SOLUTION to the player-loop problem!!! :D
-active_player_name  = Player1.name
-active_player_money = Player1.money
-
-active_field_name   = Field0.name
-active_field_price  = Field0.price
-######################################
-#THIS WHOLE IF-ELIF branching is of NO USE!!! It can be done by variables assignment!
-def GIGAFUNCTION():
-  global active_player_name
-  global active_player_money
-  if active_player_name == Player1.name:
-    print('Your turn,', active_player_name)
-    active_player_name   = Player2.name
-    GIGAFUNCTION()
-  elif active_player_name == Player2.name:
-    print('Your turn,', active_player_name)
-    active_player_name   = Player3.name
-    GIGAFUNCTION()
-  elif active_player_name == Player3.name:
-    print('Your turn,', active_player_name)
-    active_player_name   = Player4.name
-    GIGAFUNCTION()
-  elif active_player_name == Player4.name:
-    print('Your turn,', active_player_name)
-    active_player_name   = Player1.name
-    GIGAFUNCTION()
-  else:
-    pass
-
-GIGAFUNCTION()
-print('end')
-
-##############################################################################
-##############################################################################
-##############################################################################
+players = []
+players.append(Player1.name)
+players.append(Player2.name)
+players.append(Player3.name)
+players.append(Player4.name)
+print('Player list:',players)
+#####################################################
 class Field(object):
 
-  def __init__(self, name, color, price, owner, number, number_of_houses, number_of_villas):
-    self.name = name
-    self.color = color
-    self.price = price
-    self.owner = owner
-    self.number = number
-    self.number_of_houses = number_of_houses
-    self.number_of_villas = number_of_villas
+  def __init__(self,number,name,price,owner,category):
+    self.number   = number
+    self.name     = name
+    self.price    = price
+    self.owner    = owner
+    self.category = category
 
-# Fold selected lines into 1 line: CTRL + SPACE
-# How to:
-# 'atom-workspace atom-text-editor:not([mini])':
-# 'ctrl-space': 'editor:fold-selection'
+# + number_of_houses, number_of_villas
 
-Field0_inst_name  = START
-Field0_inst_color = N/A
-Field0_inst_price = -200
-Field0_inst_owner = N/A"
-Field0_inst_number = 0
-Field0_inst_number_of_houses = 0
-Field0_inst_number_of_villas = 0
+  def intro(self):
+    print('**Property name\t\t',self.name)
+    print('**Property price\t', self.price)
+    print('**Property owner\t', self.owner)
+    print('******************************************')
 
-*********************************
+  def buy(self,new_owner_name, new_owner_money):
+    self.owner = new_owner_name
+
+#####################################################
+
+Field0  = Field(0,  'START',                   10,    'Bank', 'None') #This should not be buyable. Set price back to 0, or none.
+Field1  = Field(1,  'Mediterranean Avenue',    60,   'Bank', 'Property')
+Field2  = Field(2,  'Community Chest',         0,    'Bank', 'Chest')
+Field3  = Field(3,  'Baltic Avenue',           60,   'Bank', 'Property')
+Field4  = Field(4,  'Income Tax',              200,  'Bank', 'Penalty')
+Field5  = Field(5,  'Reading Railroad',        200,  'Bank', 'Property')
+Field6  = Field(6,  'Oriental Avenue',         100,  'Bank', 'Property')
+Field7  = Field(7,  'Chance',                  0,    'Bank', 'Chance')
+Field8  = Field(8,  'Vermont Avenue',          100,  'Bank', 'Property')
+Field9  = Field(9,  'Connecticut Avenue',      120,  'Bank', 'Property')
+Field10 = Field(10, 'Just Visiting (Jail)',    0,    'Bank', 'None')
+Field11 = Field(11, 'St. Charles Place',       140,  'Bank', 'Property')
+Field12 = Field(12, 'Electric Company',        150,  'Bank', 'Property')
+Field13 = Field(13, 'States Avenue',           140,  'Bank', 'Property')
+Field14 = Field(14, 'Virginia Avenue',         160,  'Bank', 'Property')
+Field15 = Field(15, 'Pennsylvania Railroad',   200,  'Bank', 'Property')
+Field16 = Field(16, 'St. James Place',         180,  'Bank', 'Property')
+Field17 = Field(17, 'Community Chest',         0,    'Bank', 'Chest')
+Field18 = Field(18, 'Tennessee Avenue',        180,  'Bank', 'Property')
+Field19 = Field(19, 'New York Avenue',         200,  'Bank', 'Property')
+Field20 = Field(20, 'Free Parking',            0,    'Bank', 'None')
+Field21 = Field(21, 'Kentucky Avenue',         220,  'Bank', 'Property')
+Field22 = Field(22, 'Chance',                  0,    'Bank', 'Chance')
+Field23 = Field(23, 'Indiana Avenue',          220,  'Bank', 'Property')
+Field24 = Field(24, 'Illinois Avenue',         240,  'Bank', 'Property')
+Field25 = Field(25, 'B. & O. Railroad',        200,  'Bank', 'Property')
+Field26 = Field(26, 'Atlantic Avenue',         260,  'Bank', 'Property')
+Field27 = Field(27, 'Ventnor Avenue',          260,  'Bank', 'Property')
+Field28 = Field(28, 'Water Works',             150,  'Bank', 'Property')
+Field29 = Field(29, 'Marvin Gardens',          280,  'Bank', 'Property')
+Field30 = Field(30, 'Go To Jail',              0,    'Bank', 'Penalty')
+Field31 = Field(31, 'Pacific Avenue',          300,  'Bank', 'Property')
+Field32 = Field(32, 'North Carolina Avenue',   300,  'Bank', 'Property')
+Field33 = Field(33, 'Community Chest',         0,    'Bank', 'Chest')
+Field34 = Field(34, 'Pennsylvania Avenue',     320,  'Bank', 'Property')
+Field35 = Field(35, 'Short Line',              200,  'Bank', 'Property')
+Field36 = Field(36, 'Chance',                  0,    'Bank', 'Chance')
+Field37 = Field(37, 'Park Place',              350,  'Bank', 'Property')
+Field38 = Field(38, 'Luxury Tax',              100,  'Bank', 'Penalty')
+Field39 = Field(39, 'Broadwalk',               400,  'Bank', 'Property')
 
 
+#####################################################
+dict_for_active_stuff = [0, 1, 2, 3, 4, 5]
 
-#MAKE ActivePlayer.money work! var needed! global var!
+def ACTIVATOR_FUNCTION(player_name,player_position,player_properties_list,player_money,field_owner,field_price):
 
-##############################################################################
-# def Field_1():
-#     global Player1
-#     print(You are on, Field_1.Name)
-#     if Field_1.Owner == N/A:
-#         player_wants_to_buy = input(Do you want to buy it? (Y/N))
-#         player_wants_to_buy.upper()
-#         if player_wants_to_buy == Y and Player1.money >= Field_1.Price:
-#             Player1.money = Player1.money - Field_1.Price
-#             Field_1.Owner = Player1.Name
-#             Player1.owned_properties.append(Field_1.Name)
-#         else:
-#             print(You don't want to buy, or you don't have enough money.)
-#     else:
-#         print(This property is already owned by someone.)
-#
-#     empty_useless_var = input(If you don't want to do anything, just press Enter.)
+  # for player in players:
+    dict_for_active_stuff[0] = (player_name)
+    dict_for_active_stuff[1] = (player_position)
+    dict_for_active_stuff[2] = (player_properties_list)
+    dict_for_active_stuff[3] = (player_money)
+    dict_for_active_stuff[4] = (field_owner)
+    dict_for_active_stuff[5] = (field_price)
 
-##############################################################################
-# Linear control flow with consecutive functions and dice roll
-# Comment keyboard shortcut in Atom: Ctrl + /
-# def dice_roll(): -> this has already been done above. (row 103)
-#
-def Field_0():
-  print('You are on Field 0')
+#####################################################
+def field_name_list_maker():
+    global field_name_list
+    field_name_list = [
+    Field0.name,
+    Field1.name,
+    Field2.name,
+    Field3.name,
+    Field4.name,
+    Field5.name,
+    Field6.name,
+    Field7.name,
+    Field8.name,
+    Field9.name,
+    Field10.name,
+    Field11.name,
+    Field12.name,
+    Field13.name,
+    Field14.name,
+    Field15.name,
+    Field16.name,
+    Field17.name,
+    Field18.name,
+    Field19.name,
+    Field20.name,
+    Field21.name,
+    Field22.name,
+    Field23.name,
+    Field24.name,
+    Field25.name,
+    Field26.name,
+    Field27.name,
+    Field28.name,
+    Field29.name,
+    Field30.name,
+    Field31.name,
+    Field32.name,
+    Field33.name,
+    Field34.name,
+    Field35.name,
+    Field36.name,
+    Field37.name,
+    Field38.name,
+    Field39.name
+    ]
+field_name_list_maker()
+
+def field_price_list_maker():
+    global field_price_list
+    field_price_list = [
+    Field0.price,
+    Field1.price,
+    Field2.price,
+    Field3.price,
+    Field4.price,
+    Field5.price,
+    Field6.price,
+    Field7.price,
+    Field8.price,
+    Field9.price,
+    Field10.price,
+    Field11.price,
+    Field12.price,
+    Field13.price,
+    Field14.price,
+    Field15.price,
+    Field16.price,
+    Field17.price,
+    Field18.price,
+    Field19.price,
+    Field20.price,
+    Field21.price,
+    Field22.price,
+    Field23.price,
+    Field24.price,
+    Field25.price,
+    Field26.price,
+    Field27.price,
+    Field28.price,
+    Field29.price,
+    Field30.price,
+    Field31.price,
+    Field32.price,
+    Field33.price,
+    Field34.price,
+    Field35.price,
+    Field36.price,
+    Field37.price,
+    Field38.price,
+    Field39.price
+    ]
+field_price_list_maker()
+
+def field_owner_list_maker():
+    global field_owner_list
+    field_owner_list = [
+    Field0.owner,
+    Field1.owner,
+    Field2.owner,
+    Field3.owner,
+    Field4.owner,
+    Field5.owner,
+    Field6.owner,
+    Field7.owner,
+    Field8.owner,
+    Field9.owner,
+    Field10.owner,
+    Field11.owner,
+    Field12.owner,
+    Field13.owner,
+    Field14.owner,
+    Field15.owner,
+    Field16.owner,
+    Field17.owner,
+    Field18.owner,
+    Field19.owner,
+    Field20.owner,
+    Field21.owner,
+    Field22.owner,
+    Field23.owner,
+    Field24.owner,
+    Field25.owner,
+    Field26.owner,
+    Field27.owner,
+    Field28.owner,
+    Field29.owner,
+    Field30.owner,
+    Field31.owner,
+    Field32.owner,
+    Field33.owner,
+    Field34.owner,
+    Field35.owner,
+    Field36.owner,
+    Field37.owner,
+    Field38.owner,
+    Field39.owner
+    ]
+field_owner_list_maker()
+
+def MAIN_MOVE_FUNCTION(player, position, properties_list, money, owner, price):
+  print('Hi',player)
+  print('You are on field',field_name_list[position])
+  print('Press Enter to roll the dice:')
+  enter_to_roll_the_dice = input()
   dice_result = dice_roll()
-  # global dice_result
-  # print('Throw result:',dice_result)
-  # let's make dice_result = 0 just to test the below if statement:
-  dice_result = 0
-  if dice_result == 0:
-      print(Field0.name, Field0.color, Field0.price, Field0.owner)
-      if Field0.owner == N/A:
-          answer = input('Do you want to buy this property? (Y/N)')
-          answer = str(answer.upper())
-          if answer == 'Y' and Player1.money >= Field0.price:
-              Player1.money -= Field0.price
-              Field0.owner = Player1.name
-              print('Player 1 money:', Player1.money)
-              print(Field 1's owner:, Field0.owner)
-          elif answer == 'Y' and Player1.money < Field0.price:
-              print('You do not have enough money.')
-              #Here shold be the generic player loop
-              Field_0() #This way the player gets to throw again.
+  print('******************************************')
+  print(player, 'rolled:' ,dice_result)
+  Player1.position = Player1.position + dice_result
+  print('Now you are on field',field_name_list[position])
+  print('******************************************')
+  #BUY IF/ELSE
+  answer = '0'
+  if  field_owner_list[position] == 'Bank': #if field has no ownder yet
+      # this has to be corrected, while is not needed maybe? IF is enough?
+      while answer != 'Y' or answer != 'N': #while player does not give answer
+          print('This property has no owner yet.')
+          print('You can buy this property:', field_name_list[position])
+          answer = input('Do you want to buy it? (Y/N)').upper()
+          if answer == 'Y' and money >= field_price_list[position]:
+              print('Your answer was YES')
+              print('and you have enough money')
+              print('player money:', money)
+              print('player money:', money)
+              money = money - price
+              owner = player
+              # field_being_got = field_name_list[position]
+              # list_being_got_into = player.properties_list
+              #
+              # list_being_got_into.append(field_being_got)
+              #
+              # field_name_list[position] = field_being_got
+              # player.properties_list = list_being_got_into
+              properties_list.append(field_name_list[position])
+              Player1.intro()
+              print(owner)
           elif answer == 'N':
-              Field_1()
-      elif Field0_owner == Player1.name:
-          print ('*You should be able to buy houses in this part*')
-          Field_0() #This way the player gets to throw again.
-          # This does not work this way, some more Field_N functions may be needed for this to work well.
+              print('Your answer was NO')
+              pass
+          else:
+              print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
+
   else:
-      dice_result = dice_result - 1
-      Field_1()
+      print('This property belongs to', field_owner_list[position])
 
-def Field_1():
-  print('You are on Field 1')
-  dice_result = dice_roll()
-  # global dice_result
-  print('Throw result:',dice_result)
-  if dice_result == 0:
-      print('*do stuff*')
+
+
+#####################################################
+Player1.intro()
+# Player2.intro()
+# Player3.intro()
+
+Field1.intro()
+# Field2.intro()
+# Field3.intro()
+#####################################################
+Player1.get(Field1.name)
+Player2.get(Field2.name)
+Player3.get(Field3.name)
+# Player3.get(Field4.name)
+#####################################################
+Player1.intro()
+Player2.intro()
+Player3.intro()
+
+def do_you_have_it(Field_name,Player_props,Player_name):
+  if Field_name in Player_props:
+    print(Player_name, 'you have', Field_name)
   else:
-      dice_result = dice_result - 1
-      Field_2()
+    print(Player_name, 'you do not have', Field_name)
 
-def Field_2():
-  print(There is no Field_2() yet.)
-#
-# def Field_2():
-#   print('You are on Field 2')
-#   global dice_result
-#   print('Throw result:',dice_result)
-#   if dice_result == 0:
-#       print('*do stuff*')
-#   else:
-#       dice_result = dice_result - 1
-#       Field_3()
-#
-# def Field_3():
-#   print('You are on Field 3')
-#   global dice_result
-#   print('Throw result:',dice_result)
-#   if dice_result == 0:
-#       print('*do stuff*')
-#   else:
-#       dice_result = dice_result - 1
-#       Field_4()
-#
-# def Field_4():
-#   print('You are on Field 4')
-#   global dice_result
-#   print('Throw result:',dice_result)
-#   if dice_result == 0:
-#       print('*do stuff*')
-#   else:
-#       dice_result = dice_result - 1
-#       Field_5()
-#
-# def Field_5():
-#   print('You are on Field 5')
-#   global dice_result
-#   print('Throw result:',dice_result)
-#   if dice_result == 0:
-#       print('*do stuff*')
-#   else:
-#       dice_result = dice_result - 1
-#       Field_6()
-#
-# def Field_6():
-#   print('You are on Field 6')
-#   global dice_result
-#   print('Throw result:',dice_result)
-#   if dice_result == 0:
-#       print('*do stuff*')
-#   else:
-#       dice_result = dice_result - 1
-#       Field_1()
-#
-# dice_result = dice_roll()
-#
-# Field_0()
-##############################################################################
-randomcard:
+def do_you_have_it_question_for_everybody():
+    do_you_have_it(Field1.name, Player1.properties_list,Player1.name)
+    do_you_have_it(Field2.name, Player1.properties_list,Player1.name)
+    do_you_have_it(Field3.name, Player1.properties_list,Player1.name)
 
-card1: you win 287329783
-card2: sdaasd
+    # do_you_have_it(Field1.name, Player2.properties_list,Player2.name)
+    # do_you_have_it(Field2.name, Player2.properties_list,Player2.name)
+    # do_you_have_it(Field3.name, Player2.properties_list,Player2.name)
 
+    # do_you_have_it(Field1.name, Player3.properties_list,Player3.name)
+    # do_you_have_it(Field2.name, Player3.properties_list,Player3.name)
+    # do_you_have_it(Field3.name, Player3.properties_list,Player3.name)
 
-##############################################################################
-
-##############################################################################
-
-##############################################################################
-
-##############################################################################
-#THE GAME STARTS:
-dice_roll()
-print('The first roll of dice is:',dice_roll())
-##############################################################################
-print('Player1 money:' + str(Player1.money))
-
-print(Now the player has crossed the START field, and receives 200 money)
-
-print('Player1 money:' + str(Player1.money))
+do_you_have_it_question_for_everybody()
 
 
 
-#Let's try and manipulate Player1's position through input().
+ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position])
+print(dict_for_active_stuff)
 
-print(Player1's position is  + str(Player1.position))
-print(What should be the next position for Player1?)
-position_input = input()
-Player1.position = position_input
-
-print(Player1's position is  + str(Player1.position))
-print(Please press Enter to roll the dice for Player1)
-position_input = input()
-Player1.position = dice_roll()
-print(Player1's position is  + str(Player1.position))
-Field_0()
+#This does not work perfectly yet, but it is close.
+MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
+print(dict_for_active_stuff)

@@ -1,6 +1,21 @@
 #####################################################
 import math
+#####################################################
+#Make a wait() function with a configurable parameter, like: wait(1) or wait(2).
+#Source: https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/
+def wait(sec):
+    time.sleep(sec)
 
+def test_wait():
+    print('1')
+    wait(1)
+    print('2')
+    wait(2)
+    print('3')
+    wait(3)
+
+#test_wait()
+#####################################################
 #You need 'global' before accessing these in any way.
 houses_owned_by_the_bank = 32
 hotels_owned_by_the_bank = 12
@@ -63,6 +78,8 @@ class Field(object):
     self.price    = price
     self.owner    = owner
     self.category = category
+
+# + number_of_houses, number_of_villas
 
   def intro(self):
     print('**Property name\t\t',self.name)
@@ -283,6 +300,7 @@ def MAIN_MOVE_FUNCTION(player, position, properties_list, money, owner, price):
   #BUY IF/ELSE
   answer = '0'
   if  field_owner_list[position] == 'Bank': #if field has no ownder yet
+      # this has to be corrected, while is not needed maybe? IF is enough?
       while answer != 'Y' or answer != 'N': #while player does not give answer
           print('This property has no owner yet.')
           print('You can buy this property:', field_name_list[position])
