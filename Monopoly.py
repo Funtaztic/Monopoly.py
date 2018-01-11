@@ -404,7 +404,12 @@ def next_player():
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
         print(Player1.name, 'rolled:' ,dice_result)
-        Player1.position += dice_result
+
+        if Player1.position + dice_result <= 39:
+            Player1.position += dice_result
+        else:
+            Player1.money += 200
+            Player1.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
         MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
@@ -417,7 +422,12 @@ def next_player():
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
         print(Player2.name, 'rolled:' ,dice_result)
-        Player2.position += dice_result
+
+        if Player2.position + dice_result <= 39:
+            Player2.position += dice_result
+        else:
+            Player2.money += 200
+            Player2.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player2.name,Player2.position,Player2.properties_list,Player2.money,field_owner_list[Player2.position],field_price_list[Player2.position],field_category_list[Player2.position])
         MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
@@ -430,7 +440,12 @@ def next_player():
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
         print(Player3.name, 'rolled:' ,dice_result)
-        Player3.position += dice_result
+
+        if Player3.position + dice_result <= 39:
+            Player3.position += dice_result
+        else:
+            Player3.money += 200
+            Player3.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player3.name,Player3.position,Player3.properties_list,Player3.money,field_owner_list[Player3.position],field_price_list[Player3.position],field_category_list[Player3.position])
         MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
@@ -443,7 +458,12 @@ def next_player():
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
         print(Player4.name, 'rolled:' ,dice_result)
-        Player4.position += dice_result
+
+        if Player4.position + dice_result <= 39:
+            Player4.position += dice_result
+        else:
+            Player4.money += 200
+            Player4.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player4.name,Player4.position,Player4.properties_list,Player4.money,field_owner_list[Player4.position],field_price_list[Player4.position],field_category_list[Player4.position])
         MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
@@ -459,7 +479,7 @@ def next_player():
 #####################################################
 
 Player1.intro()
-# Player2.intro()
+# Player3.intro()
 # Player3.intro()
 
 Field1.intro()
