@@ -1,0 +1,1009 @@
+Python 3.6.1 (default, Dec 2015, 13:05:11)
+[GCC 4.8.2] on linux
+
+Player list: ['Annabel', 'Bernard', 'Clara', 'Daniel']
+['START', 'Mediterranean Avenue', 'Community Chest', 'Baltic Avenue', 'Income Tax', 'Reading Railroad', 'Oriental Avenue', 'Chance', 'Vermont Avenue', 'Connecticut Avenue', 'Just Visiting (Jail)', 'St. Charles Place', 'Electric Company', 'States Avenue', 'Virginia Avenue', 'Pennsylvania Railroad', 'St. James Place', 'Community Chest', 'Tennessee Avenue', 'New York Avenue', 'Free Parking', 'Kentucky Avenue', 'Chance', 'Indiana Avenue', 'Illinois Avenue', 'B. & O. Railroad', 'Atlantic Avenue', 'Ventnor Avenue', 'Water Works', 'Marvin Gardens', 'Go To Jail', 'Pacific Avenue', 'North Carolina Avenue', 'Community Chest', 'Pennsylvania Avenue', 'Short Line', 'Chance', 'Park Place', 'Luxury Tax', 'Broadwalk']
+[0, 60, 0, 60, 200, 200, 100, 0, 100, 120, 0, 140, 150, 140, 160, 200, 180, 0, 180, 200, 0, 220, 0, 220, 240, 200, 260, 260, 150, 280, 0, 300, 300, 0, 320, 200, 0, 350, 100, 400]
+['Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank', 'Bank']
+['None', 'Property', 'Chest', 'Property', 'Penalty', 'Property', 'Property', 'Chance', 'Property', 'Property', 'None', 'Property', 'Property', 'Property', 'Property', 'Property', 'Property', 'Chest', 'Property', 'Property', 'None', 'Property', 'Chance', 'Property', 'Property', 'Property', 'Property', 'Property', 'Property', 'Property', 'Penalty', 'Property', 'Property', 'Chest', 'Property', 'Property', 'Chance', 'Property', 'Penalty', 'Property']
+Player name:		 Annabel
+Player money:		 100
+Player position:	 0
+Player properties:	 []
+******************************************
+******************************************
+**Property name		 Mediterranean Avenue
+**Property price	 60
+**Property owner	 Bank
+******************************************
+Annabel 	have bought	 Mediterranean Avenue
+******************************************
+Bernard 	have bought	 Community Chest
+******************************************
+Clara 	have bought	 Baltic Avenue
+******************************************
+Player name:		 Annabel
+Player money:		 100
+Player position:	 0
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Player name:		 Bernard
+Player money:		 100
+Player position:	 0
+Player properties:	 ['Community Chest']
+******************************************
+Player name:		 Clara
+Player money:		 100
+Player position:	 0
+Player properties:	 ['Baltic Avenue']
+******************************************
+Annabel you have Mediterranean Avenue
+Annabel you do not have Community Chest
+Annabel you do not have Baltic Avenue
+Player name:		 Bernard
+Player money:		 100
+Player position:	 0
+Player properties:	 ['Community Chest']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 1
+******************************************
+Bernard 1 ['Community Chest'] 100 Bank 60 Property
+******************************************
+You are on field Mediterranean Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 1 : Mediterranean Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Mediterranean Avenue
+It costs 60
+Do you want to buy it? (Y/N) y
+Your answer was YES and you have enough money
+Bernard 1 ['Community Chest'] 100 Bank 60 Property
+Now you pay 60 for the property
+Bernard 1 ['Community Chest', 'Mediterranean Avenue'] 40 Bernard 60 Property
+This property has no owner yet.
+You can buy this property: Mediterranean Avenue
+It costs 60
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 0
+Player properties:	 ['Baltic Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 1
+******************************************
+Clara 1 ['Baltic Avenue'] 100 Bank 60 Property
+******************************************
+You are on field Mediterranean Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 1 : Mediterranean Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Mediterranean Avenue
+It costs 60
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 0
+Player properties:	 []
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 4
+******************************************
+Daniel 4 [] 100 Bank 200 Penalty
+******************************************
+You are on field Income Tax
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 4 : Income Tax
+******************************************
+This property has no owner yet.
+You can buy this property: Income Tax
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 0
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 1
+******************************************
+Annabel 1 ['Mediterranean Avenue'] 100 Bank 60 Property
+******************************************
+You are on field Mediterranean Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 1 : Mediterranean Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Mediterranean Avenue
+It costs 60
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 1
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 2
+******************************************
+Bernard 3 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 60 Property
+******************************************
+You are on field Baltic Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 3 : Baltic Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Baltic Avenue
+It costs 60
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 1
+Player properties:	 ['Baltic Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 5
+******************************************
+Clara 6 ['Baltic Avenue'] 100 Bank 100 Property
+******************************************
+You are on field Oriental Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 6 : Oriental Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Oriental Avenue
+It costs 100
+Do you want to buy it? (Y/N) y
+Your answer was YES and you have enough money
+Clara 6 ['Baltic Avenue'] 100 Bank 100 Property
+Now you pay 100 for the property
+Clara 6 ['Baltic Avenue', 'Oriental Avenue'] 0 Clara 100 Property
+This property has no owner yet.
+You can buy this property: Oriental Avenue
+It costs 100
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 4
+Player properties:	 []
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 4
+******************************************
+Daniel 8 [] 100 Bank 100 Property
+******************************************
+You are on field Vermont Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 8 : Vermont Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Vermont Avenue
+It costs 100
+Do you want to buy it? (Y/N) y
+Your answer was YES and you have enough money
+Daniel 8 [] 100 Bank 100 Property
+Now you pay 100 for the property
+Daniel 8 ['Vermont Avenue'] 0 Daniel 100 Property
+This property has no owner yet.
+You can buy this property: Vermont Avenue
+It costs 100
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 1
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 2
+******************************************
+Annabel 3 ['Mediterranean Avenue'] 100 Bank 60 Property
+******************************************
+You are on field Baltic Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 3 : Baltic Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Baltic Avenue
+It costs 60
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 3
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 1
+******************************************
+Bernard 4 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 200 Penalty
+******************************************
+You are on field Income Tax
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 4 : Income Tax
+******************************************
+This property has no owner yet.
+You can buy this property: Income Tax
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 6
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 3
+******************************************
+Clara 9 ['Baltic Avenue', 'Oriental Avenue'] 100 Bank 120 Property
+******************************************
+You are on field Connecticut Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 9 : Connecticut Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Connecticut Avenue
+It costs 120
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 8
+Player properties:	 ['Vermont Avenue']
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 1
+******************************************
+Daniel 9 ['Vermont Avenue'] 100 Bank 120 Property
+******************************************
+You are on field Connecticut Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 9 : Connecticut Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Connecticut Avenue
+It costs 120
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 3
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 2
+******************************************
+Annabel 5 ['Mediterranean Avenue'] 100 Bank 200 Property
+******************************************
+You are on field Reading Railroad
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 5 : Reading Railroad
+******************************************
+This property has no owner yet.
+You can buy this property: Reading Railroad
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 4
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 1
+******************************************
+Bernard 5 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 200 Property
+******************************************
+You are on field Reading Railroad
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 5 : Reading Railroad
+******************************************
+This property has no owner yet.
+You can buy this property: Reading Railroad
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 9
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 3
+******************************************
+Clara 12 ['Baltic Avenue', 'Oriental Avenue'] 100 Bank 150 Property
+******************************************
+You are on field Electric Company
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 12 : Electric Company
+******************************************
+This property has no owner yet.
+You can buy this property: Electric Company
+It costs 150
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 9
+Player properties:	 ['Vermont Avenue']
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 2
+******************************************
+Daniel 11 ['Vermont Avenue'] 100 Bank 140 Property
+******************************************
+You are on field St. Charles Place
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 11 : St. Charles Place
+******************************************
+This property has no owner yet.
+You can buy this property: St. Charles Place
+It costs 140
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 5
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 5
+******************************************
+Annabel 10 ['Mediterranean Avenue'] 100 Bank 0 None
+******************************************
+You are on field Just Visiting (Jail)
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 10 : Just Visiting (Jail)
+******************************************
+This property has no owner yet.
+You can buy this property: Just Visiting (Jail)
+It costs 0
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 5
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 1
+******************************************
+Bernard 6 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 100 Property
+******************************************
+You are on field Oriental Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 6 : Oriental Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Oriental Avenue
+It costs 100
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 12
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 6
+******************************************
+Clara 18 ['Baltic Avenue', 'Oriental Avenue'] 100 Bank 180 Property
+******************************************
+You are on field Tennessee Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 18 : Tennessee Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Tennessee Avenue
+It costs 180
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 11
+Player properties:	 ['Vermont Avenue']
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 2
+******************************************
+Daniel 13 ['Vermont Avenue'] 100 Bank 140 Property
+******************************************
+You are on field States Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 13 : States Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: States Avenue
+It costs 140
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 10
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 3
+******************************************
+Annabel 13 ['Mediterranean Avenue'] 100 Bank 140 Property
+******************************************
+You are on field States Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 13 : States Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: States Avenue
+It costs 140
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 6
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 2
+******************************************
+Bernard 8 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 100 Property
+******************************************
+You are on field Vermont Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 8 : Vermont Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Vermont Avenue
+It costs 100
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 18
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 2
+******************************************
+Clara 20 ['Baltic Avenue', 'Oriental Avenue'] 100 Bank 0 None
+******************************************
+You are on field Free Parking
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 20 : Free Parking
+******************************************
+This property has no owner yet.
+You can buy this property: Free Parking
+It costs 0
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 13
+Player properties:	 ['Vermont Avenue']
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 2
+******************************************
+Daniel 15 ['Vermont Avenue'] 100 Bank 200 Property
+******************************************
+You are on field Pennsylvania Railroad
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 15 : Pennsylvania Railroad
+******************************************
+This property has no owner yet.
+You can buy this property: Pennsylvania Railroad
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 13
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 5
+******************************************
+Annabel 18 ['Mediterranean Avenue'] 100 Bank 180 Property
+******************************************
+You are on field Tennessee Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 18 : Tennessee Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Tennessee Avenue
+It costs 180
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 8
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 1
+******************************************
+Bernard 9 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 120 Property
+******************************************
+You are on field Connecticut Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 9 : Connecticut Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Connecticut Avenue
+It costs 120
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 20
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 6
+******************************************
+Clara 26 ['Baltic Avenue', 'Oriental Avenue'] 100 Bank 260 Property
+******************************************
+You are on field Atlantic Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 26 : Atlantic Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Atlantic Avenue
+It costs 260
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 15
+Player properties:	 ['Vermont Avenue']
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 4
+******************************************
+Daniel 19 ['Vermont Avenue'] 100 Bank 200 Property
+******************************************
+You are on field New York Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 19 : New York Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: New York Avenue
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 18
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 1
+******************************************
+Annabel 19 ['Mediterranean Avenue'] 100 Bank 200 Property
+******************************************
+You are on field New York Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 19 : New York Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: New York Avenue
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 9
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 2
+******************************************
+Bernard 11 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 140 Property
+******************************************
+You are on field St. Charles Place
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 11 : St. Charles Place
+******************************************
+This property has no owner yet.
+You can buy this property: St. Charles Place
+It costs 140
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 26
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 4
+******************************************
+Clara 30 ['Baltic Avenue', 'Oriental Avenue'] 100 Bank 0 Penalty
+******************************************
+You are on field Go To Jail
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 30 : Go To Jail
+******************************************
+This property has no owner yet.
+You can buy this property: Go To Jail
+It costs 0
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 19
+Player properties:	 ['Vermont Avenue']
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 6
+******************************************
+Daniel 25 ['Vermont Avenue'] 100 Bank 200 Property
+******************************************
+You are on field B. & O. Railroad
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 25 : B. & O. Railroad
+******************************************
+This property has no owner yet.
+You can buy this property: B. & O. Railroad
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 19
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 5
+******************************************
+Annabel 24 ['Mediterranean Avenue'] 100 Bank 240 Property
+******************************************
+You are on field Illinois Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 24 : Illinois Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Illinois Avenue
+It costs 240
+Do you want to buy it? (Y/N)
+Please enter 'N' for 'NO' or 'Y' for 'YES'.
+This property has no owner yet.
+You can buy this property: Illinois Avenue
+It costs 240
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 11
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 3
+******************************************
+Bernard 14 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 160 Property
+******************************************
+You are on field Virginia Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 14 : Virginia Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Virginia Avenue
+It costs 160
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 30
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 6
+******************************************
+Clara 36 ['Baltic Avenue', 'Oriental Avenue'] 100 Bank 0 Chance
+******************************************
+You are on field Chance
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 36 : Chance
+******************************************
+This property has no owner yet.
+You can buy this property: Chance
+It costs 0
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Daniel
+Player money:		 100
+Player position:	 25
+Player properties:	 ['Vermont Avenue']
+******************************************
+Hi Daniel
+Press Enter to roll the dice:
+
+Daniel rolled: 6
+******************************************
+Daniel 31 ['Vermont Avenue'] 100 Bank 300 Property
+******************************************
+You are on field Pacific Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 31 : Pacific Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Pacific Avenue
+It costs 300
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Annabel
+Player money:		 100
+Player position:	 24
+Player properties:	 ['Mediterranean Avenue']
+******************************************
+Hi Annabel
+Press Enter to roll the dice:
+
+Annabel rolled: 1
+******************************************
+Annabel 25 ['Mediterranean Avenue'] 100 Bank 200 Property
+******************************************
+You are on field B. & O. Railroad
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 25 : B. & O. Railroad
+******************************************
+This property has no owner yet.
+You can buy this property: B. & O. Railroad
+It costs 200
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Bernard
+Player money:		 100
+Player position:	 14
+Player properties:	 ['Community Chest', 'Mediterranean Avenue']
+******************************************
+Hi Bernard
+Press Enter to roll the dice:
+
+Bernard rolled: 4
+******************************************
+Bernard 18 ['Community Chest', 'Mediterranean Avenue'] 100 Bank 180 Property
+******************************************
+You are on field Tennessee Avenue
+************************************************************************************
+************************************************************************************
+************************************************************************************
+Now you are on field 18 : Tennessee Avenue
+******************************************
+This property has no owner yet.
+You can buy this property: Tennessee Avenue
+It costs 180
+Do you want to buy it? (Y/N) n
+Okay, next player.
+Player name:		 Clara
+Player money:		 100
+Player position:	 36
+Player properties:	 ['Baltic Avenue', 'Oriental Avenue']
+******************************************
+Hi Clara
+Press Enter to roll the dice:
+
+Clara rolled: 5
+Traceback (most recent call last):
+  File "python", line 504, in <module>
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 436, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 449, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 410, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 423, in next_player
+  File "python", line 390, in MAIN_MOVE_FUNCTION
+  File "python", line 435, in next_player
+IndexError: list index out of range
