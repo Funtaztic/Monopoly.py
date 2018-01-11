@@ -339,7 +339,7 @@ def field_category_list_maker():
 field_category_list_maker()
 print(field_category_list)
 
-def MAIN_MOVE_FUNCTION(player, position, properties_list, money, owner, price, category):
+def BUY_OR_PAY(player, position, properties_list, money, owner, price, category):
 
   # print(field_name_list)
   # print(field_price_list)
@@ -412,7 +412,7 @@ def next_player():
             Player1.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
-        MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
+        BUY_OR_PAY(*dict_for_active_stuff)
 
     elif dict_for_active_stuff[0] == Player1.name:
 
@@ -430,7 +430,7 @@ def next_player():
             Player2.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player2.name,Player2.position,Player2.properties_list,Player2.money,field_owner_list[Player2.position],field_price_list[Player2.position],field_category_list[Player2.position])
-        MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
+        BUY_OR_PAY(*dict_for_active_stuff)
 
     elif dict_for_active_stuff[0] == Player2.name:
 
@@ -448,7 +448,7 @@ def next_player():
             Player3.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player3.name,Player3.position,Player3.properties_list,Player3.money,field_owner_list[Player3.position],field_price_list[Player3.position],field_category_list[Player3.position])
-        MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
+        BUY_OR_PAY(*dict_for_active_stuff)
 
     elif dict_for_active_stuff[0] == Player3.name:
 
@@ -466,7 +466,7 @@ def next_player():
             Player4.position += dice_result - 40
 
         ACTIVATOR_FUNCTION(Player4.name,Player4.position,Player4.properties_list,Player4.money,field_owner_list[Player4.position],field_price_list[Player4.position],field_category_list[Player4.position])
-        MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
+        BUY_OR_PAY(*dict_for_active_stuff)
     else:
         print('There is no player left to play with...? :S')
 
@@ -525,5 +525,5 @@ next_player()
 print(dict_for_active_stuff)
 
 # #This does not work perfectly yet, but it is close.
-# MAIN_MOVE_FUNCTION(*dict_for_active_stuff)
+# BUY_OR_PAY(*dict_for_active_stuff)
 # print(dict_for_active_stuff)
