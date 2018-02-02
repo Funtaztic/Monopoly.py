@@ -27,16 +27,18 @@ def dice_roll():
 
 class Player(object):
 
-  def __init__(self,name,money,position):
+  def __init__(self,name,money,position,roundnum):
     self.name               = name
     self.money              = money
     self.position           = position
+    self.roundnum           = roundnum
     self.properties_list    = []
 
   def intro(self):
     print('Player name:\t\t',     self.name)
     print('Player money:\t\t',    self.money)
     print('Player position:\t',   self.position)
+    print('Player round:\t\t',    self.roundnum)
     print('Player properties:\t', self.properties_list)
     print('******************************************')
 
@@ -58,10 +60,10 @@ class Player(object):
 # Player3 = Player(Player3_input_name, 100, 0)
 # Player4 = Player(Player4_input_name, 100, 0)
 
-Player1 = Player('Annabel', 100, 0)
-Player2 = Player('Bernard', 100, 0)
-Player3 = Player('Clara',   100, 0)
-Player4 = Player('Daniel',  100, 0)
+Player1 = Player('Annabel', 100, 0, 1)
+Player2 = Player('Bernard', 100, 0, 1)
+Player3 = Player('Clara',   100, 0, 1)
+Player4 = Player('Daniel',  100, 0, 1)
 
 players = []
 players.append(Player1.name)
@@ -136,18 +138,18 @@ Field39 = Field(39, 'Broadwalk',               400,  'Bank', 'Property')
 
 
 #####################################################
-dict_for_active_stuff = [0, 1, 2, 3, 4, 5, 6]
+list_for_active_stuff = [0, 1, 2, 3, 4, 5, 6]
 
 def ACTIVATOR_FUNCTION(player_name,player_position,player_properties_list,player_money,field_owner,field_price,field_category):
 
   # for player in players:
-    dict_for_active_stuff[0] = (player_name)
-    dict_for_active_stuff[1] = (player_position)
-    dict_for_active_stuff[2] = (player_properties_list)
-    dict_for_active_stuff[3] = (player_money)
-    dict_for_active_stuff[4] = (field_owner)
-    dict_for_active_stuff[5] = (field_price)
-    dict_for_active_stuff[6] = (field_category)
+    list_for_active_stuff[0] = (player_name)
+    list_for_active_stuff[1] = (player_position)
+    list_for_active_stuff[2] = (player_properties_list)
+    list_for_active_stuff[3] = (player_money)
+    list_for_active_stuff[4] = (field_owner)
+    list_for_active_stuff[5] = (field_price)
+    list_for_active_stuff[6] = (field_category)
 
 #####################################################
 def field_name_list_maker():
@@ -376,7 +378,7 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
               money -= price
               print('Now you pay', field_price_list[position], 'for the property')
               # https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
-              owner = dict_for_active_stuff[0]
+              owner = list_for_active_stuff[0]
               field_to_be_bought = field_name_list[position]
               properties_list.append(field_to_be_bought)
               print(player, position, properties_list, money, owner, price, category)
@@ -396,7 +398,7 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
 
 #####################################################
 def next_player():
-    if dict_for_active_stuff[0] == Player4.name or dict_for_active_stuff[0] == 0:
+    if list_for_active_stuff[0] == Player4.name or list_for_active_stuff[0] == 0:
 
         Player1.intro()
         print('Hi',Player1.name)
@@ -410,11 +412,12 @@ def next_player():
         else:
             Player1.money += 200
             Player1.position += dice_result - 40
+            Player1.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
 
-    elif dict_for_active_stuff[0] == Player1.name:
+    elif list_for_active_stuff[0] == Player1.name:
 
         Player2.intro()
         print('Hi',Player2.name)
@@ -428,11 +431,12 @@ def next_player():
         else:
             Player2.money += 200
             Player2.position += dice_result - 40
+            Player2.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player2.name,Player2.position,Player2.properties_list,Player2.money,field_owner_list[Player2.position],field_price_list[Player2.position],field_category_list[Player2.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
 
-    elif dict_for_active_stuff[0] == Player2.name:
+    elif list_for_active_stuff[0] == Player2.name:
 
         Player3.intro()
         print('Hi',Player3.name)
@@ -446,11 +450,12 @@ def next_player():
         else:
             Player3.money += 200
             Player3.position += dice_result - 40
+            Player3.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player3.name,Player3.position,Player3.properties_list,Player3.money,field_owner_list[Player3.position],field_price_list[Player3.position],field_category_list[Player3.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
 
-    elif dict_for_active_stuff[0] == Player3.name:
+    elif list_for_active_stuff[0] == Player3.name:
 
         Player4.intro()
         print('Hi',Player4.name)
@@ -464,9 +469,10 @@ def next_player():
         else:
             Player4.money += 200
             Player4.position += dice_result - 40
+            Player4.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player4.name,Player4.position,Player4.properties_list,Player4.money,field_owner_list[Player4.position],field_price_list[Player4.position],field_category_list[Player4.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
     else:
         print('There is no player left to play with...? :S')
 
@@ -522,8 +528,8 @@ do_you_have_it_question_for_everybody()
 
 ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
 next_player()
-print(dict_for_active_stuff)
+print(list_for_active_stuff)
 
 # #This does not work perfectly yet, but it is close.
-# BUY_OR_PAY(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
+# BUY_OR_PAY(*list_for_active_stuff)
+# print(list_for_active_stuff)
