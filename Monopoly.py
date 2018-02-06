@@ -16,6 +16,7 @@ def test_wait():
 
 #test_wait()
 #####################################################
+#We could use some more global variables to make the money system work.
 #You need 'global' before accessing these in any way.
 houses_owned_by_the_bank = 32
 hotels_owned_by_the_bank = 12
@@ -367,35 +368,39 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
   if  field_owner_list[position] == 'Bank': #if field has no ownder yet
       # this has to be corrected, while is not needed maybe? IF is enough?
       while answer != 'Y' or answer != 'N': #while player does not give answer
-          print('This property has no owner yet.')
-          print('You can buy this property:', field_name_list[position])
-          # answer = input('Do you want to buy it? (Y/N)').upper()
-          print('It costs', field_price_list[position])
-          answer = input('Do you want to buy it? (Y/N)').upper()
-          if answer == 'Y' and money >= field_price_list[position]:
-              print('Your answer was YES and you have enough money')
-              print(player, position, properties_list, money, owner, price, category)
-              money -= price
-              print('Now you pay', field_price_list[position], 'for the property')
-              # https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
-              owner = list_for_active_stuff[0]
-              field_to_be_bought = field_name_list[position]
-              properties_list.append(field_to_be_bought)
-              print(player, position, properties_list, money, owner, price, category)
-              pass
-          elif answer == 'Y' and money < field_price_list[position]:
-              print("I'm sorry, you don't have enough money.")
-              print('Next player.')
+          if field_category_list[position] != 'Property':
+              print('You can not buy this property. It is not for sale.')
               next_player()
-          elif answer == 'N':
-              print('Okay, next player.')
-              next_player()
-          else:
-              print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
+          elif field_category_list[position] == 'Property':
+              print('This property has no owner yet.')
+              print('You can buy this property:', field_name_list[position])
+              # answer = input('Do you want to buy it? (Y/N)').upper()
+              print('It costs', field_price_list[position])
+              answer = input('Do you want to buy it? (Y/N)').upper()
+              if answer == 'Y' and money >= field_price_list[position]:
+                  print('Your answer was YES and you have enough money')
+                  print(player, position, properties_list, money, owner, price, category)
+                  money -= price
+                  print('Now you pay', field_price_list[position], 'for the property')
+                  # https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
+                  owner = list_for_active_stuff[0]
+                  field_to_be_bought = field_name_list[position]
+                  properties_list.append(field_to_be_bought)
+                  print(player, position, properties_list, money, owner, price, category)
+                  pass
+              elif answer == 'Y' and money < field_price_list[position]:
+                  print("I'm sorry, you don't have enough money.")
+                  print('Next player.')
+                  next_player()
+              elif answer == 'N':
+                  print('Okay, next player.')
+                  next_player()
+              else:
+                  print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
 
   else:
       print('This property belongs to', field_owner_list[position])
-
+      next_player()
 #####################################################
 def next_player():
     if list_for_active_stuff[0] == Player4.name or list_for_active_stuff[0] == 0:
