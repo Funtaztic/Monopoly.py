@@ -16,6 +16,7 @@ def test_wait():
 
 #test_wait()
 #####################################################
+#We could use some more global variables to make the money system work.
 #You need 'global' before accessing these in any way.
 houses_owned_by_the_bank = 32
 hotels_owned_by_the_bank = 12
@@ -138,18 +139,18 @@ Field39 = Field(39, 'Broadwalk',               400,  'Bank', 'Property')
 
 
 #####################################################
-dict_for_active_stuff = [0, 1, 2, 3, 4, 5, 6]
+list_for_active_stuff = [0, 1, 2, 3, 4, 5, 6]
 
 def ACTIVATOR_FUNCTION(player_name,player_position,player_properties_list,player_money,field_owner,field_price,field_category):
 
   # for player in players:
-    dict_for_active_stuff[0] = (player_name)
-    dict_for_active_stuff[1] = (player_position)
-    dict_for_active_stuff[2] = (player_properties_list)
-    dict_for_active_stuff[3] = (player_money)
-    dict_for_active_stuff[4] = (field_owner)
-    dict_for_active_stuff[5] = (field_price)
-    dict_for_active_stuff[6] = (field_category)
+    list_for_active_stuff[0] = (player_name)
+    list_for_active_stuff[1] = (player_position)
+    list_for_active_stuff[2] = (player_properties_list)
+    list_for_active_stuff[3] = (player_money)
+    list_for_active_stuff[4] = (field_owner)
+    list_for_active_stuff[5] = (field_price)
+    list_for_active_stuff[6] = (field_category)
 
 #####################################################
 def field_name_list_maker():
@@ -366,32 +367,37 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
   if  field_owner_list[position] == 'Bank': #if field has no ownder yet
       # this has to be corrected, while is not needed maybe? IF is enough?
       while answer != 'Y' or answer != 'N': #while player does not give answer
-          print('This property has no owner yet.')
-          print('You can buy this property:', field_name_list[position])
-          # answer = input('Do you want to buy it? (Y/N)').upper()
-          print('It costs', field_price_list[position])
-          answer = input('Do you want to buy it? (Y/N)').upper()
-          if answer == 'Y' and money >= field_price_list[position]:
-              print('Your answer was YES and you have enough money')
-              print(player, position, properties_list, money, owner, price, category)
-              money -= price
-              print('Now you pay', field_price_list[position], 'for the property')
-              # https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
-              owner = dict_for_active_stuff[0]
-              field_to_be_bought = field_name_list[position]
-              properties_list.append(field_to_be_bought)
-              print(player, position, properties_list, money, owner, price, category)
-              pass
-          elif answer == 'Y' and money < field_price_list[position]:
-              print("I'm sorry, you don't have enough money.")
-              print('Next player.')
+          if field_category_list[position] != 'Property':
+              print('You can not buy this property. It is not for sale.')
               next_player()
-          elif answer == 'N':
-              print('Okay, next player.')
-              next_player()
-          else:
-              print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
+          elif field_category_list[position] == 'Property':
+              print('This property has no owner yet.')
+              print('You can buy this property:', field_name_list[position])
+              # answer = input('Do you want to buy it? (Y/N)').upper()
+              print('It costs', field_price_list[position])
+              answer = input('Do you want to buy it? (Y/N)').upper()
+              if answer == 'Y' and money >= field_price_list[position]:
+                  print('Your answer was YES and you have enough money')
+                  print(player, position, properties_list, money, owner, price, category)
+                  money -= price
+                  print('Now you pay', field_price_list[position], 'for the property')
+                  # https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference
+                  owner = list_for_active_stuff[0]
+                  field_to_be_bought = field_name_list[position]
+                  properties_list.append(field_to_be_bought)
+                  print(player, position, properties_list, money, owner, price, category)
+                  pass
+              elif answer == 'Y' and money < field_price_list[position]:
+                  print("I'm sorry, you don't have enough money.")
+                  print('Next player.')
+                  next_player()
+              elif answer == 'N':
+                  print('Okay, next player.')
+                  next_player()
+              else:
+                  print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
 
+<<<<<<< HEAD
   elif field_owner_list[position] == Player1.name:
       print('This property is owned by', Player1.name)
       print('Now you have to pay a penalty fee.')
@@ -401,9 +407,14 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
       # print('This property belongs to', field_owner_list[position])
 
 
+=======
+  else:
+      print('This property belongs to', field_owner_list[position])
+      next_player()
+>>>>>>> c73cc3773574971127b72a25c7aac911b488ead6
 #####################################################
 def next_player():
-    if dict_for_active_stuff[0] == Player4.name or dict_for_active_stuff[0] == 0:
+    if list_for_active_stuff[0] == Player4.name or list_for_active_stuff[0] == 0:
 
         Player1.intro()
         print('Hi',Player1.name, 'you are in round', Player1.roundnum)
@@ -420,9 +431,9 @@ def next_player():
             Player1.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
 
-    elif dict_for_active_stuff[0] == Player1.name:
+    elif list_for_active_stuff[0] == Player1.name:
 
         Player2.intro()
         print('Hi',Player2.name, 'you are in round', Player2.roundnum)
@@ -439,9 +450,9 @@ def next_player():
             Player2.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player2.name,Player2.position,Player2.properties_list,Player2.money,field_owner_list[Player2.position],field_price_list[Player2.position],field_category_list[Player2.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
 
-    elif dict_for_active_stuff[0] == Player2.name:
+    elif list_for_active_stuff[0] == Player2.name:
 
         Player3.intro()
         print('Hi',Player3.name, 'you are in round', Player3.roundnum)
@@ -458,9 +469,9 @@ def next_player():
             Player3.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player3.name,Player3.position,Player3.properties_list,Player3.money,field_owner_list[Player3.position],field_price_list[Player3.position],field_category_list[Player3.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
 
-    elif dict_for_active_stuff[0] == Player3.name:
+    elif list_for_active_stuff[0] == Player3.name:
 
         Player4.intro()
         print('Hi',Player4.name, 'you are in round', Player4.roundnum)
@@ -477,7 +488,7 @@ def next_player():
             Player4.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player4.name,Player4.position,Player4.properties_list,Player4.money,field_owner_list[Player4.position],field_price_list[Player4.position],field_category_list[Player4.position])
-        BUY_OR_PAY(*dict_for_active_stuff)
+        BUY_OR_PAY(*list_for_active_stuff)
     else:
         print('There is no player left to play with...? :S')
 
@@ -533,8 +544,8 @@ do_you_have_it_question_for_everybody()
 
 ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
 next_player()
-print(dict_for_active_stuff)
+print(list_for_active_stuff)
 
 # #This does not work perfectly yet, but it is close.
-# BUY_OR_PAY(*dict_for_active_stuff)
-# print(dict_for_active_stuff)
+# BUY_OR_PAY(*list_for_active_stuff)
+# print(list_for_active_stuff)
