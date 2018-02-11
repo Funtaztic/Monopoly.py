@@ -27,16 +27,18 @@ def dice_roll():
 
 class Player(object):
 
-  def __init__(self,name,money,position):
+  def __init__(self,name,money,position,roundnum):
     self.name               = name
     self.money              = money
     self.position           = position
+    self.roundnum           = roundnum
     self.properties_list    = []
 
   def intro(self):
     print('Player name:\t\t',     self.name)
     print('Player money:\t\t',    self.money)
     print('Player position:\t',   self.position)
+    print('Player round:\t\t',    self.roundnum)
     print('Player properties:\t', self.properties_list)
     print('******************************************')
 
@@ -47,8 +49,8 @@ class Player(object):
 
   # def roll_the_dice(self,position):
 
-#####################################################
-#The Player1_input_name stuff can be copied from original.
+# ####################################################
+# The Player1_input_name stuff can be copied from original.
 # Player1_input_name = input('Player1, please enter your Name.')
 # Player2_input_name = input('Player2, please enter your Name.')
 # Player3_input_name = input('Player3, please enter your Name.')
@@ -58,10 +60,10 @@ class Player(object):
 # Player3 = Player(Player3_input_name, 100, 0)
 # Player4 = Player(Player4_input_name, 100, 0)
 
-Player1 = Player('Annabel', 100, 0)
-Player2 = Player('Bernard', 100, 0)
-Player3 = Player('Clara',   100, 0)
-Player4 = Player('Daniel',  100, 0)
+Player1 = Player('Annabel', 100, 0, 1)
+Player2 = Player('Bernard', 100, 0, 1)
+Player3 = Player('Clara',   100, 0, 1)
+Player4 = Player('Daniel',  100, 0, 1)
 
 players = []
 players.append(Player1.name)
@@ -196,7 +198,6 @@ def field_name_list_maker():
     ]
 field_name_list_maker()
 print(field_name_list)
-
 
 def field_price_list_maker():
     global field_price_list
@@ -391,15 +392,21 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
           else:
               print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
 
-  else:
-      print('This property belongs to', field_owner_list[position])
+  elif field_owner_list[position] == Player1.name:
+      print('This property is owned by', Player1.name)
+      print('Now you have to pay a penalty fee.')
+
+
+
+      # print('This property belongs to', field_owner_list[position])
+
 
 #####################################################
 def next_player():
     if dict_for_active_stuff[0] == Player4.name or dict_for_active_stuff[0] == 0:
 
         Player1.intro()
-        print('Hi',Player1.name)
+        print('Hi',Player1.name, 'you are in round', Player1.roundnum)
         print('Press Enter to roll the dice:')
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
@@ -410,6 +417,7 @@ def next_player():
         else:
             Player1.money += 200
             Player1.position += dice_result - 40
+            Player1.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
         BUY_OR_PAY(*dict_for_active_stuff)
@@ -417,7 +425,7 @@ def next_player():
     elif dict_for_active_stuff[0] == Player1.name:
 
         Player2.intro()
-        print('Hi',Player2.name)
+        print('Hi',Player2.name, 'you are in round', Player2.roundnum)
         print('Press Enter to roll the dice:')
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
@@ -428,6 +436,7 @@ def next_player():
         else:
             Player2.money += 200
             Player2.position += dice_result - 40
+            Player2.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player2.name,Player2.position,Player2.properties_list,Player2.money,field_owner_list[Player2.position],field_price_list[Player2.position],field_category_list[Player2.position])
         BUY_OR_PAY(*dict_for_active_stuff)
@@ -435,7 +444,7 @@ def next_player():
     elif dict_for_active_stuff[0] == Player2.name:
 
         Player3.intro()
-        print('Hi',Player3.name)
+        print('Hi',Player3.name, 'you are in round', Player3.roundnum)
         print('Press Enter to roll the dice:')
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
@@ -446,6 +455,7 @@ def next_player():
         else:
             Player3.money += 200
             Player3.position += dice_result - 40
+            Player3.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player3.name,Player3.position,Player3.properties_list,Player3.money,field_owner_list[Player3.position],field_price_list[Player3.position],field_category_list[Player3.position])
         BUY_OR_PAY(*dict_for_active_stuff)
@@ -453,7 +463,7 @@ def next_player():
     elif dict_for_active_stuff[0] == Player3.name:
 
         Player4.intro()
-        print('Hi',Player4.name)
+        print('Hi',Player4.name, 'you are in round', Player4.roundnum)
         print('Press Enter to roll the dice:')
         enter_to_roll_the_dice = input()
         dice_result = dice_roll()
@@ -464,6 +474,7 @@ def next_player():
         else:
             Player4.money += 200
             Player4.position += dice_result - 40
+            Player4.roundnum += 1
 
         ACTIVATOR_FUNCTION(Player4.name,Player4.position,Player4.properties_list,Player4.money,field_owner_list[Player4.position],field_price_list[Player4.position],field_category_list[Player4.position])
         BUY_OR_PAY(*dict_for_active_stuff)
