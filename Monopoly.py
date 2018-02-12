@@ -21,6 +21,12 @@ def test_wait():
 houses_owned_by_the_bank = 32
 hotels_owned_by_the_bank = 12
 
+#As GLOBAL_VAR_TEST is working just fine, we can use global variables for money.
+Player1_money = 100
+Player2_money = 100
+Player3_money = 100
+Player4_money = 100
+
 def dice_roll():
     from random import randint
     result = (randint(1,6))
@@ -28,16 +34,15 @@ def dice_roll():
 
 class Player(object):
 
-  def __init__(self,name,money,position,roundnum):
+  def __init__(self,name,position,roundnum):
     self.name               = name
-    self.money              = money
     self.position           = position
     self.roundnum           = roundnum
     self.properties_list    = []
 
   def intro(self):
     print('Player name:\t\t',     self.name)
-    print('Player money:\t\t',    self.money)
+    print('Player name:\t\t',     self.name)
     print('Player position:\t',   self.position)
     print('Player round:\t\t',    self.roundnum)
     print('Player properties:\t', self.properties_list)
@@ -61,10 +66,10 @@ class Player(object):
 # Player3 = Player(Player3_input_name, 100, 0)
 # Player4 = Player(Player4_input_name, 100, 0)
 
-Player1 = Player('Annabel', 100, 0, 1)
-Player2 = Player('Bernard', 100, 0, 1)
-Player3 = Player('Clara',   100, 0, 1)
-Player4 = Player('Daniel',  100, 0, 1)
+Player1 = Player('Annabel', 0, 1)
+Player2 = Player('Bernard', 0, 1)
+Player3 = Player('Clara',   0, 1)
+Player4 = Player('Daniel',  0, 1)
 
 players = []
 players.append(Player1.name)
@@ -342,7 +347,10 @@ field_category_list_maker()
 print(field_category_list)
 
 def BUY_OR_PAY(player, position, properties_list, money, owner, price, category):
-
+  global Player1_money
+  global Player2_money
+  global Player3_money
+  global Player4_money
   # print(field_name_list)
   # print(field_price_list)
   # print(field_owner_list)
@@ -386,7 +394,7 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
                   field_to_be_bought = field_name_list[position]
                   properties_list.append(field_to_be_bought)
                   print(player, position, properties_list, money, owner, price, category)
-                  pass
+                  next_player()
               elif answer == 'Y' and money < field_price_list[position]:
                   print("I'm sorry, you don't have enough money.")
                   print('Next player.')
@@ -397,23 +405,20 @@ def BUY_OR_PAY(player, position, properties_list, money, owner, price, category)
               else:
                   print("Please enter 'N' for 'NO' or 'Y' for 'YES'.")
 
-<<<<<<< HEAD
   elif field_owner_list[position] == Player1.name:
       print('This property is owned by', Player1.name)
       print('Now you have to pay a penalty fee.')
 
-
-
-      # print('This property belongs to', field_owner_list[position])
-
-
-=======
   else:
       print('This property belongs to', field_owner_list[position])
       next_player()
->>>>>>> c73cc3773574971127b72a25c7aac911b488ead6
 #####################################################
 def next_player():
+    global Player1_money
+    global Player2_money
+    global Player3_money
+    global Player4_money
+
     if list_for_active_stuff[0] == Player4.name or list_for_active_stuff[0] == 0:
 
         Player1.intro()
@@ -426,11 +431,11 @@ def next_player():
         if Player1.position + dice_result <= 39:
             Player1.position += dice_result
         else:
-            Player1.money += 200
+            Player1_money += 200
             Player1.position += dice_result - 40
             Player1.roundnum += 1
 
-        ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
+        ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1_money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
         BUY_OR_PAY(*list_for_active_stuff)
 
     elif list_for_active_stuff[0] == Player1.name:
@@ -445,11 +450,11 @@ def next_player():
         if Player2.position + dice_result <= 39:
             Player2.position += dice_result
         else:
-            Player2.money += 200
+            Player2_money += 200
             Player2.position += dice_result - 40
             Player2.roundnum += 1
 
-        ACTIVATOR_FUNCTION(Player2.name,Player2.position,Player2.properties_list,Player2.money,field_owner_list[Player2.position],field_price_list[Player2.position],field_category_list[Player2.position])
+        ACTIVATOR_FUNCTION(Player2.name,Player2.position,Player2.properties_list,Player2_money,field_owner_list[Player2.position],field_price_list[Player2.position],field_category_list[Player2.position])
         BUY_OR_PAY(*list_for_active_stuff)
 
     elif list_for_active_stuff[0] == Player2.name:
@@ -464,11 +469,11 @@ def next_player():
         if Player3.position + dice_result <= 39:
             Player3.position += dice_result
         else:
-            Player3.money += 200
+            Player3_money += 200
             Player3.position += dice_result - 40
             Player3.roundnum += 1
 
-        ACTIVATOR_FUNCTION(Player3.name,Player3.position,Player3.properties_list,Player3.money,field_owner_list[Player3.position],field_price_list[Player3.position],field_category_list[Player3.position])
+        ACTIVATOR_FUNCTION(Player3.name,Player3.position,Player3.properties_list,Player3_money,field_owner_list[Player3.position],field_price_list[Player3.position],field_category_list[Player3.position])
         BUY_OR_PAY(*list_for_active_stuff)
 
     elif list_for_active_stuff[0] == Player3.name:
@@ -483,11 +488,11 @@ def next_player():
         if Player4.position + dice_result <= 39:
             Player4.position += dice_result
         else:
-            Player4.money += 200
+            Player4_money += 200
             Player4.position += dice_result - 40
             Player4.roundnum += 1
 
-        ACTIVATOR_FUNCTION(Player4.name,Player4.position,Player4.properties_list,Player4.money,field_owner_list[Player4.position],field_price_list[Player4.position],field_category_list[Player4.position])
+        ACTIVATOR_FUNCTION(Player4.name,Player4.position,Player4.properties_list,Player4_money,field_owner_list[Player4.position],field_price_list[Player4.position],field_category_list[Player4.position])
         BUY_OR_PAY(*list_for_active_stuff)
     else:
         print('There is no player left to play with...? :S')
@@ -542,7 +547,7 @@ do_you_have_it_question_for_everybody()
 ############################## THE GAME STARTS #################################
 ################################################################################
 
-ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1.money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
+ACTIVATOR_FUNCTION(Player1.name,Player1.position,Player1.properties_list,Player1_money,field_owner_list[Player1.position],field_price_list[Player1.position],field_category_list[Player1.position])
 next_player()
 print(list_for_active_stuff)
 
