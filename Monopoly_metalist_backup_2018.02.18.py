@@ -9,16 +9,16 @@ def dice_roll():
 
 metalist = [
 # [number, name, money, owner]
-	[0,		'Start,',		0,	'Player1'],
-	[1,		'Field1',		10,	'Player1'],
-	[2,		'Field2', 	10,	'Player1'],
-	[3,		'Field3', 	10,	'Player1'],
-	[4,		'Field4', 	10,	'Player1'],
-	[5,		'Field5', 	10,	'Player1'],
-	[6,		'Field6', 	10,	'Player1'],
-	[7,		'Field7', 	10,	'Player1'],
-	[8,		'Field8', 	10,	'Player1'],
-	[9,		'Field9', 	10,	'Player1'],
+	[0,		'Start,',		0,	'Bank'],
+	[1,		'Field1',		10,	'Bank'],
+	[2,		'Field2', 	10,	'Bank'],
+	[3,		'Field3', 	10,	'Bank'],
+	[4,		'Field4', 	10,	'Bank'],
+	[5,		'Field5', 	10,	'Bank'],
+	[6,		'Field6', 	10,	'Bank'],
+	[7,		'Field7', 	10,	'Bank'],
+	[8,		'Field8', 	10,	'Bank'],
+	[9,		'Field9', 	10,	'Bank'],
 	[10,	'Field10',	10,	'Bank'],
 	[11,	'Field11',	10,	'Bank'],
 	[12,	'Field12',	10,	'Bank'],
@@ -94,7 +94,7 @@ def f():
 		#else: if active player does not want to buy it, it goes to an auction.
 		
 		#if active player owns this place already, he can build. 
-		if metalist[player_1_list[0]][3] == player_1_list[0]:
+		if metalist[player_1_list[0]][3] == player_1_list[1]:
 			print(player_1_list[1], 'you own this place. Do you want to build? BETA')
 		
 		#elif: other player owns the place, active player has to pay (based on price * houses)
@@ -129,7 +129,9 @@ def f():
 			
 			print('------------------------------------------------------------------------------')
 			print("Player2's turn would be here")
+			
 		#else: if active player does not want to buy it, it goes to an auction.
+	
 	# 	else:
 		 # s
 			
