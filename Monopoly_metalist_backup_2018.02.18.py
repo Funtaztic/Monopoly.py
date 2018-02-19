@@ -55,21 +55,33 @@ metalist = [
 # [number,	 name,		price,	 owner]
 # [0,				'Start',			0,	'Bank'],
 
+# metalist[player_1_list[0]][1] = based on the position of the player, find the active field's name
+# metalist[player_1_list[0]][2] = based on the position of the player, find the active field's price
+# metalist[player_1_list[0]][3] = based on the position of the player, find the active field's owner
+		
 # player_list (a list of info about the players) = [position, name, money]
 player_1_list = [0,'Player1',100]
 player_2_list = [0,'Player2',100]
+player_3_list = [0,'Player3',100]
+player_4_list = [0,'Player4',100]
 
 # properties list for each player
 proper_1_list = []
 proper_2_list = []
+proper_3_list = []
+proper_4_list = []
 
 # player_n_list[0] = Position
 # player_n_list[1] = Name
 # player_n_list[2] = Money
 
+#if active player owns this place already, he can build. 
+#elif: other player owns the place, active player has to pay (based on price * houses)
+#elif: nobody owns the place, it can be bought by active player.
+#else: if active player does not want to buy it, it goes to an auction.
+
 def f():
-	answer = 0
-	while answer != 1 or answer != 2:
+	while True:
 		print('------------------------------------------------------------------------------')
 		print(player_1_list[1], 'press Enter to roll the dice.')
 		roll = input()
@@ -84,23 +96,13 @@ def f():
 			player_1_list[0] += dice_result - 40
 		print(player_1_list[1], 'you are on field number', player_1_list[0], ':', metalist[player_1_list[0]][1], 'and you have', player_1_list[2], 'money')
 		
-		# metalist[player_1_list[0]][1] = based on the position of the player, find the active field's name
-		# metalist[player_1_list[0]][2] = based on the position of the player, find the active field's price
-		# metalist[player_1_list[0]][3] = based on the position of the player, find the active field's owner
-		
-		#if active player owns this place already, he can build. 
-		#elif: other player owns the place, active player has to pay (based on price * houses)
-		#elif: nobody owns the place, it can be bought by active player.
-		#else: if active player does not want to buy it, it goes to an auction.
-		
 		#if active player owns this place already, he can build. 
 		if metalist[player_1_list[0]][3] == player_1_list[1]:
 			print(player_1_list[1], 'you own this place. Do you want to build? BETA')
 		
 		#elif: other player owns the place, active player has to pay (based on price * houses)
 		#elif metalist[player_1_list[0]][3] == player_2_list[0] or metalist[player_1_list[0]][3] == 'Bank':
-			
-		
+
 		#elif: nobody owns the place, it can be bought by active player.
 		elif metalist[player_1_list[0]][3] == 'Bank':
 			print('This place is owned by the Bank.')
@@ -121,14 +123,33 @@ def f():
 				metalist[player_1_list[0]][3] = player_1_list[1]
 				print(metalist[player_1_list[0]][3])
 			elif answer == '2':
-				#player moves 1 field forward
-	
-				player_1_list[0] += 1
+				pass
 			else:
 				print('Please select from the options.')
-			
-			print('------------------------------------------------------------------------------')
-			print("Player2's turn would be here")
+
+		elif metalist[player_2_list[0]][3] == 'Bank':
+			print('This place is owned by the Bank.')
+			print('Do you want to buy', metalist[player_2_list[0]][1], '?')
+			print('1. Yes')
+			print('2. No')
+	
+			answer=input()
+			if answer == '1':
+				print('Player 2 has these properties:', proper_2_list)
+				print(metalist[player_2_list[0]][3])
+				#player money -= field price
+				player_2_list[2] -= metalist[player_2_list[0]][2]
+				#bought property goes into player's property list
+				proper_2_list.append(metalist[player_2_list[0]][1])
+				print('Player 2 has these properties:', proper_2_list)
+				#player who paid, becomes the new owner of the property
+				metalist[player_2_list[0]][3] = player_2_list[1]
+				print(metalist[player_2_list[0]][3])
+			elif answer == '2':
+				pass
+			else:
+				print('Please select from the options.')
+
 			
 		#else: if active player does not want to buy it, it goes to an auction.
 	
